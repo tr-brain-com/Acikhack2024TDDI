@@ -1,7 +1,7 @@
 #  🇹🇷 Acikhack2024TDDI
 Teknofest 2024 Türkçe Doğal Dil işleme Senaryo kategorisi
 
-BU kısma real time uygulama gif koyulabilir
+BU kısma real time uygulama gif eklenebilir
 
 #  🇹🇷 Data Minning
 ELde edilen veriler hakkında bilgilendirme ve yöntemleri
