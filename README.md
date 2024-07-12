@@ -11,9 +11,14 @@ Veri madenciliği, büyük veri kümelerinden anlamlı ifadeler, ilişkiler ve b
 BeautifulSoup ve Scrapy: Web kazıma (web scraping) için kullanılır. İnternetten veri çekmek ve analiz etmek için kullanışlıdır. BeautifulSoup, Python'da HTML ve XML dosyalarını ayrıştırmak ve analiz etmek için ,
 kullanılan bir kütüphanedir. Web sayfalarından veri çekmek, web kazıma (web scraping) işlemlerinde sıklıkla tercih edilir.HTML ve XML dosyalarını kolayca ayrıştırır.Belgelerdeki elementlere, etiketlere ve niteliklere hızlı ve kolay erişim sağlar.
 Belgeleri ağaç yapısı (parse tree) olarak temsil eder ve bu sayede belirli elementleri seçip işlemek kolaylaşır.
-```
-pip install beautifulsoup4
-```
+<pre><code>
+<!DOCTYPE html>
+<html>
+<body>
+    <p>pip install </p>
+</body>
+</html>
+</code></pre>
 
 #  🇹🇷 Data Stats
 Veri seti istatistikleri
