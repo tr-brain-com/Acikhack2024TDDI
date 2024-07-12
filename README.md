@@ -5,7 +5,7 @@ BU kısma real time uygulama gif eklenebilir
 
 #  🇹🇷 Data Minning
 <p align="left">
-  <img alt="class_distributions" title="BRAIN-TR" src="https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/beautifulsoup.jpg">
+  <img alt="class_distributions" title="BRAIN-TR" src="https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/beautifulsoup.jpg" height="400">
 </p>
 
 #  🇹🇷 Data Stats
