@@ -91,7 +91,7 @@ Detay sayfasına bir HTTP GET isteği gönderiyoruz ve gelen içeriği Beautiful
 <!DOCTYPE html>
 <html>
 <body>
-    <p>   f teknik_ayrintilar = detay_soup.find_all("div", attrs={"class":"complaint-detail-description"})
+    <p>  teknik_ayrintilar = detay_soup.find_all("div", attrs={"class":"complaint-detail-description"})
     for i in teknik_ayrintilar:
             content = i.text.strip()
             writer.writerow([link_total, content])
