@@ -62,11 +62,42 @@ HTML içeriğinde, şikayet detaylarını içeren tüm article elementlerini cla
 <html>
 <body>
     <p>  basliklar = soup.find_all("article", attrs={"class":"card-v2 ga-v ga-c"})
- with open('turkcell-platinum/sikayet_turkcell-platinum_page10.csv', mode='w', newline='', encoding='utf-8') as file:
+  with open('turkcell-platinum/sikayet_turkcell-platinum_page10.csv', mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file, delimiter='|')
         writer.writerow(["Link", "Content"])  # Başlık satırı
     </p>
 </body>
 </html>
 </code></pre>
+Bulunan her article elemanında şikayet başlığını içeren h2 elemanını buluyoruz. Bu h2 elemanı içindeki a etiketiyle şikayetin detaylarına giden bağlantıyı alıyoruz ve tam URL'yi oluşturuyoruz (link_basi ile link_devam'ı birleştirerek).
+<pre><code>
+<!DOCTYPE html>
+<html>
+<body>
+    <p>   for baslik in basliklar:
+            link = baslik.find("h2", attrs={"class": "complaint-title"})
+            link_devam = link.a.get("href")
+            link_basi = "https://www.sikayetvar.com"
+            link_total = link_basi + link_devam
+            print(link_total)
+    detay = requests.get(link_total, headers=headers)
+    detay_soup = BeautifulSoup(detay.content, "lxml")
+    </p>
+</body>
+</html>
+</code></pre>
+Detay sayfasına bir HTTP GET isteği gönderiyoruz ve gelen içeriği BeautifulSoup ile ayrıştırıyoruz.Detay sayfasında, şikayet detaylarını içeren div elemanlarını class attributeleri "complaint-detail-description" olanları buluyoruz.
+<pre><code>
+<!DOCTYPE html>
+<html>
+<body>
+    <p>   f teknik_ayrintilar = detay_soup.find_all("div", attrs={"class":"complaint-detail-description"})
+    for i in teknik_ayrintilar:
+            content = i.text.strip()
+            writer.writerow([link_total, content])
+    </p>
+</body>
+</html>
+</code></pre>
+
 
