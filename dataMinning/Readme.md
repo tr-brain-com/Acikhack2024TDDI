@@ -51,8 +51,21 @@ Belirtilen URL'ye HTTP GET isteği gönderiyoruz ve yanıtı (response) alıyoru
 <html>
 <body>
     <p> response = requests.get(url, headers=headers)
-        if response.status_code == 200:
+    if response.status_code == 200:
     soup = BeautifulSoup(response.content, "lxml")</p>
+</body>
+</html>
+</code></pre>
+HTML içeriğinde, şikayet detaylarını içeren tüm article elementlerini class attributeleri "card-v2 ga-v ga-c" olanları buluyoruz.Belirtilen dosya yolunda yeni bir CSV dosyası oluşturuyoruz. Dosya yazma modunda (mode='w') açılıyor ve UTF-8 karakter kodlaması kullanılıyor. CSV dosyasına yazmak için bir csv.writer oluşturuyoruz ve dosyaya "Link" ve "Content" başlıklarını içeren ilk satırı yazıyoruz.
+<pre><code>
+<!DOCTYPE html>
+<html>
+<body>
+    <p>  basliklar = soup.find_all("article", attrs={"class":"card-v2 ga-v ga-c"})
+        with open('turkcell-platinum/sikayet_turkcell-platinum_page10.csv', mode='w', newline='', encoding='utf-8') as file:
+        writer = csv.writer(file, delimiter='|')
+        writer.writerow(["Link", "Content"])  # Başlık satırı
+    </p>
 </body>
 </html>
 </code></pre>
