@@ -63,7 +63,7 @@ HTML içeriğinde, şikayet detaylarını içeren tüm article elementlerini cla
 <body>
     <p>  basliklar = soup.find_all("article", attrs={"class":"card-v2 ga-v ga-c"})
         with open('turkcell-platinum/sikayet_turkcell-platinum_page10.csv', mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.writer(file, delimiter='|')
+    writer = csv.writer(file, delimiter='|')
         writer.writerow(["Link", "Content"])  # Başlık satırı
     </p>
 </body>
