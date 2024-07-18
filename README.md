@@ -23,6 +23,7 @@ Veri seti içerisinde analiz çalışması
 # 🇹🇷 Data Preparation
 
 # 🇹🇷 Data Cleanning
+Cleaning service, bu çalışmaya uygun olarak yapılan denemeler sonucunda bir standart belirlenerek çoğu bölümü opsiyonel olarak kullanılabilecek şekilde geliştirilmiştir. Temizleme servisi hakkında daha ayrıntılı bilgi almak ve detaylar için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/tree/main/cleaning-service).
 
 #  🇹🇷 Contribution
 Yaratıcılık ve inovasyon
