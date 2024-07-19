@@ -75,4 +75,4 @@ Bu ek kolonlar sayesinde, daha ayrıntılı ve eyleme geçirilebilir bir duygu a
 Bize sağladığı destek ve yenilikçi yönlendirmeleriyle Takım Danışmanımız [DR.Duygu Çakır](https://tr.linkedin.com/in/duygu-cakir-45483164) teşekkür ederiz.
 Teknofest yarışması kapsamında bizi her türlü sorularımızda yönlendiren yarışma durumları hakkında sürekli güncel bilgiler sağlayan Takım Mentörümüz [DR.Merve Ayyüce Kızrak](https://tr.linkedin.com/in/merve-ayyuce-kizrak) teşekkür ederiz.
 
-Ayrıca takım üyelerimizin her birine ayrı ayrı [Ensar ERDOĞAN](https://tr.linkedin.com/in/ensar-erdogan-948a02161), [Oğuzhan YENEN](https://tr.linkedin.com/in/o%C4%9Fuzhan-yenen-99a774139), [Serdar KALAYCI](https://tr.linkedin.com/in/serdar-kalayc%C4%B1-49975037) teşekkür ederiz.
+Ayrıca takım üyelerimizin her birine ayrı ayrı [Ensar ERDOĞAN](https://tr.linkedin.com/in/ensar-erdogan-948a02161), [Oğuzhan YENEN](https://tr.linkedin.com/in/oguzhan-yenen-99a774139), [Serdar KALAYCI](https://tr.linkedin.com/in/serdar-kalayc%C4%B1-49975037) teşekkür ederiz.
