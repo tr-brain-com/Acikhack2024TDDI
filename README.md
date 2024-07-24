@@ -39,7 +39,7 @@ Cleaning service, bu çalışmaya uygun olarak yapılan denemeler sonucunda bir 
 
     Reason: Olumsuz duygular için belirlenmiştir, sorunun kaynağını belirler. Örneğin, fatura, ağ (network) sorunları, mobil numara taşıma (mnp) gibi. Bu, müşteri memnuniyetsizliğinin temel nedenini anlamamıza yardımcı olur.
 
-    Muhattap: Türkcel'in muhatap olup olmadığını belirtir.
+    Muhatap: Türkcel'in muhatap olup olmadığını belirtir.
 
     Mobil: Sorunun mobil hat ile ilgili olup olmadığını belirtir.
 
