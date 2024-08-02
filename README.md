@@ -65,6 +65,14 @@ Bu ek kolonlar sayesinde, daha ayrıntılı ve eyleme geçirilebilir bir duygu a
 
 2024 Teknofest Doğal Dil İşleme (NLP) senaryo kategorisinde, Türkcell ve ürünleri (Superonline, Platinum Paket, BİP, Fizy, Lifebox vb.) hakkında kullanıcı yorumlarına dayalı özgün bir entity bazlı duygu analizi gerçekleştirilmiştir. Bu çalışmada, yalnızca yorumların duygusal tonu belirlenmemiş, aynı zamanda yorumların taşıdığı önem veya aciliyet düzeyini belirtmek için "severity" adı verilen ekstra bir kategori de eklenmiştir. "Severity" kolonu, metinde tartışılan konunun aciliyet veya önem derecesini ifade eder; 0 önemsiz, 1 orta derecede önemli ve 2 acil bir durumu belirtir. Ayrıntılı bilgi ve kod için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/severity%20Classification/readme.md).
 
+# 🇹🇷 Reason Classification
+<p align="center">
+  <img alt="class_distributions" title="BRAIN-TR" src="https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/Screenshot%20from%202024-08-02%2021-21-59.png" height="600">
+</p>
+
+Teknofest 2024'teki Doğal Dil İşleme (NLP) senaryo kategorisi yarışmasında katıldığımız proje, entity bazlı duygu analizi üzerine odaklanmaktadır. Projemizde, Turkcell ve ürünleri hakkında yazılan metinlerde olumsuzluğa sebep olan kategorilerin tespitini amaçlayarak özgünlük sağlamak için veri setine "reason" (sebep) kolonu eklenmiştir. Bu kolon, kullanıcıların olumsuz duygu bildirdiği durumlarda hangi kategoriye (örneğin bayi, fatura, kampanya) dair olumsuzluk yaşadıklarını belirlememize olanak tanımaktadır.Ayrıntılı bilgi ve kod için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/reason%20classificaiton/readme.md).
+
+
 # 🇹🇷 Model usage
 
 # 🇹🇷 Application
