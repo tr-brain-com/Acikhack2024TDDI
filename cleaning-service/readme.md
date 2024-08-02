@@ -7,7 +7,7 @@ Metinsel verilerimiz olduğunda, kelimeleri makine öğrenme algoritmalarıyla �
 Bu çalışmada metin içerisinden anlam ifade edecek her türlü veriyi tutarak veri üzerinde önişleme yapmak amaçlanmaktadır. Bu kapsam kodlar parametrik olarak geliştirilerek farklı durumlarda senaryoların test edilmesine uygun hale getirilmiştir.
 
 ## Servis Mimarisi
-Çalışma, micro servis mimarisi üzerine inşa edilmiştir. FastAPI çerçevesi kullanılmıştır. FastAPI, standart Python tipi ipuçlarına dayalı Python 3.7+ ile API'ler oluşturmaya yönelik modern, hızlı (yüksek performanslı) bir web çerçevesidir.
+Çalışma, micro servis mimarisi üzerine inşa edilmiştir. FastAPI çerçevesi kullanılmıştır. FastAPI, standart Python tipi ipuçlarına dayalı Python 3.9+ ile API'ler oluşturmaya yönelik modern, hızlı (yüksek performanslı) bir web çerçevesidir.
 
 Çalıştırmak için,
 
