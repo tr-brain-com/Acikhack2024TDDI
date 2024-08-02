@@ -10,7 +10,7 @@ Bu çalışmada kullanılan model, 'dbmdz/bert-base-turkish-uncased' adlı Türk
 Çalışmamız, özellikle müşteri geri bildirimlerinin daha etkin bir şekilde yönetilmesi için yeni bir yol sunmaktadır. Severity sınıflandırması sayesinde, kullanıcılar tarafından bildirilen sorunlar veya talepler daha etkili bir şekilde önceliklendirilebilir ve çözüm süreci hızlandırılabilir. Bu, müşteri memnuniyetini artırma ve müşteri deneyimini iyileştirme potansiyeline sahiptir. Gelecekte, bu yaklaşım farklı sektörlerde de uygulanarak, müşteri geri bildirimlerine dayalı hizmet iyileştirme süreçlerine katkı sağlayabilir.
 
 <p align="center">
-  <img alt="class_distributions" title="BRAIN-TR" src="https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/Screenshot%20from%202024-08-02%2021-03-13.png" height="300">
+  <img alt="class_distributions" title="BRAIN-TR" src="https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/Screenshot%20from%202024-08-02%2021-03-13.png">
 </p>
 
 
