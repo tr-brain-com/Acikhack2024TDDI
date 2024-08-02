@@ -58,6 +58,13 @@ Bu ek kolonlar sayesinde, daha ayrıntılı ve eyleme geçirilebilir bir duygu a
 
 # 🇹🇷 Sentiment Analysis
 
+# 🇹🇷 Severity Classification
+<p align="center">
+  <img alt="class_distributions" title="BRAIN-TR" src="https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/Screenshot%20from%202024-08-02%2021-03-13.png" height="600">
+</p>
+
+2024 Teknofest Doğal Dil İşleme (NLP) senaryo kategorisinde, Türkcell ve ürünleri (Superonline, Platinum Paket, BİP, Fizy, Lifebox vb.) hakkında kullanıcı yorumlarına dayalı özgün bir entity bazlı duygu analizi gerçekleştirilmiştir. Bu çalışmada, yalnızca yorumların duygusal tonu belirlenmemiş, aynı zamanda yorumların taşıdığı önem veya aciliyet düzeyini belirtmek için "severity" adı verilen ekstra bir kategori de eklenmiştir. "Severity" kolonu, metinde tartışılan konunun aciliyet veya önem derecesini ifade eder; 0 önemsiz, 1 orta derecede önemli ve 2 acil bir durumu belirtir. Ayrıntılı bilgi ve kod için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/severity%20Classification/readme.md).
+
 # 🇹🇷 Model usage
 
 # 🇹🇷 Application
