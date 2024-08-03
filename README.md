@@ -29,7 +29,8 @@ Veri seti içerisinde analiz çalışması
 <p align="center">
   <img alt="class_distributions" title="BRAIN-TR" src="https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/cleaning.png" height="300">
 </p>
-Cleaning service, bu çalışmaya uygun olarak yapılan denemeler sonucunda bir standart belirlenerek çoğu bölümü opsiyonel olarak kullanılabilecek şekilde geliştirilmiştir. Temizleme servisi hakkında daha ayrıntılı bilgi almak ve detaylar için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/tree/main/cleaning-service/readme.md).
+Cleaning service, bu çalışmaya uygun olarak yapılan denemeler sonucunda bir standart belirlenerek çoğu bölümü opsiyonel olarak kullanılabilecek şekilde geliştirilmiştir. 
+Temizleme servisi hakkında daha ayrıntılı bilgi almak ve detaylar için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/cleaning-service/readme.md).
 
 #  🇹🇷 Contribution
 2024 Teknofest Türkçe Doğal Dil İşleme senaryo kategorisi yarışmasında, projemiz varlık tabanlı duygu analizine odaklanmaktadır. Bu kapsamda, X ve Şikayet Var sayfalarından veri madenciliği yaparak kendi verilerimizi oluşturduk. Yarışmanın ana hedefi, metin içerisindeki varlıkları tespit etmek ve bu varlıklara ait duygu analizini yaparak sonuçları olumlu, olumsuz ve nötr olarak sınıflandırmaktır. Analizimizin kapsamını ve derinliğini artırmak için veri setimize ek kolonlar ekledik ve her biri aşağıda açıklanmaktadır
