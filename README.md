@@ -18,7 +18,8 @@ Belgeleri ağaç yapısı (parse tree) olarak temsil eder ve bu sayede belirli e
 <p align="center">
   <img alt="class_distributions" title="BRAIN-TR" src="https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/Screenshot%20from%202024-07-30%2008-46-02.png" height="300">
 </p>
-Veriseti analiz [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/stats/readme.md)
+Veriseti analiz [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/stats/readme.md).
+
 
 #  🇹🇷 Exploratory Data Analysis
 Veri seti içerisinde analiz çalışması
