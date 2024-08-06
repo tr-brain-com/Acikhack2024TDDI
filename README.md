@@ -12,7 +12,7 @@ BeautifulSoup ve Scrapy: Web kazıma (web scraping) için kullanılır. İnterne
 kullanılan bir kütüphanedir. Web sayfalarından veri çekmek, web kazıma (web scraping) işlemlerinde sıklıkla tercih edilir. HTML ve XML dosyalarını kolayca ayrıştırır.Belgelerdeki elementlere, etiketlere ve niteliklere hızlı ve kolay erişim sağlar.
 Belgeleri ağaç yapısı (parse tree) olarak temsil eder ve bu sayede belirli elementleri seçip işlemek kolaylaşır.
 
-2024 Teknofest Türkçe Dogal Dil İşleme kategorisi için data minning code blogunu adım adım incelemek için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/edit/main/dataMinning/Readme.md).
+2024 Teknofest Türkçe Dogal Dil İşleme kategorisi için data minning code blogunu adım adım incelemek için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/dataMinning/readme.md).
 
 #  🇹🇷 Data Stats
 <p align="center">
