@@ -28,6 +28,21 @@ train_df, val_df = train_test_split(data, test_size=0.10)
 
 Bu işlemle 165738 kayıt eğitim için 18416 adet kayıt ise doğrulama için kullanılmıştır.
 
+BERT modeli için kullanılan parametreler:
+
+input_token_size = 256  
+
+batch_size = 32
+
+epoch = 6
+
+max_grad_num = 1.0
+
+optimizer = AdamW
+
+learning_rate = 3e-5
+
+epsilon = 1e-8
 
 
-Veri, gerek LSTM, gerek SpaCy ve gerekse de BERT mimarileri 
+
