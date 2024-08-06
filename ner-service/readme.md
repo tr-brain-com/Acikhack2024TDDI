@@ -1,4 +1,4 @@
-Varlık İsmi Çıkarma
+## Varlık İsmi Çıkarma
 
 2024 Teknofest Doğal Dil İşleme (NLP) senaryo kategorisinde, Türkcell gibi mobil operatörler ve bunlarla ilişkili olan ürünler, paketler ve uygulamaları  (Superonline, Platinum Paket, BİP, Fizy, Lifebox, Müşteri Hizmetleri vb.) kapsayan, metinler içinden ilgili varlıkları çıkarmak amacıyla geliştirlmiş olan projedir.
 
@@ -76,6 +76,15 @@ Sonuç:
 
 ![Screenshot from 2024-08-06 16-35-06](https://github.com/user-attachments/assets/2a9780c4-5c8c-4e78-bbae-587709e86f7b)
 
+
+Yukarıda ki metriklerden ve açıklamalardan da görüldüğü üzere bulduğumuz veriler, etiketleme politikamız ve model seçimimiz, detaylı varlık çıkarımı için oldukça etkileyici sonuçlar vermiştir.
+
+"OTHER" ifadeler Accuracy anlamında modeli overfit duruma  götürsede F1 score bize gerçek değeri vermekte; ayrıca eğitim vericinin haricind edindiğimiz gerçek dünya verileri ile de model başarısını göstermektedir.
+
+
+Model indirmek için lütfen iletişime geçin.
+
+https://drive.google.com/drive/folders/1H0nGnQlnkLIxpahd4rLhQ1uWwYWjZ9v7
 
 
 
