@@ -14,7 +14,7 @@ Geliştirilen model için veriler X platformundan üzerinden @Turkcell varlığ�
 
 Etiketlenen verilerin modeller <b>SpaCy ve Bert</b> gibi modellerde kullanımını kolaylaştırmak amacıyla "ner-service/utils/Json2Conll.ipynb" adresinde notebook dosyasında ki yapı geliştirilmiş ve veriler <b>jsonL</b> formatından <b>conLL</b> formatına dönüştürülmüştür.
 
-Bu süreçte özellikle şikayetvar verilerini işlerken karşımıza uzun metinler içeren veriler çıkmıştır. Bu durum ileride model geliştirme aşamasında "input_token_size" parametresi açısından problem teşkil edebilirdi. Ayrıca daha önceki tecrübelerimizden edindiğimiz bilgiler NER problemleri için uzun cümleler yerine anlamlı daha kısa cümleler kurulmasının daha başarılı sonuçlar ürettiğini göstermiştir. Bu sebeble sikayetvar verilerini cümlelere ayırmak için (veriler incelendiğinde imla kurallarına uygun cümleler olduğu gözlemlendi) "ner-service/utils/chuningLongText.ipynb" adresinde bulunan notebook dosyası içerisinde chunking yapısı geliştirildi.
+Bu süreçte özellikle şikayetvar verilerini işlerken karşımıza uzun metinler içeren veriler çıkmıştır. Bu durum ileride model geliştirme aşamasında <b>"input_token_size"</b> parametresi açısından problem teşkil edebilirdi. Ayrıca daha önceki tecrübelerimizden edindiğimiz bilgiler NER problemleri için uzun cümleler yerine anlamlı daha kısa cümleler kurulmasının daha başarılı sonuçlar ürettiğini göstermiştir. Bu sebeble sikayetvar verilerini cümlelere ayırmak için (veriler incelendiğinde imla kurallarına uygun cümleler olduğu gözlemlendi) "ner-service/utils/chuningLongText.ipynb" adresinde bulunan notebook dosyası içerisinde chunking yapısı geliştirildi.
 
 Tüm bu süreçler sonucunda elde edilen veri dosyası "ner-service/data/dataset.conll" adresinde bulunmaktadır. Son durumda tag ve örnek sayıları aşağıdaki gibi oluşmuştur.
 
@@ -30,13 +30,13 @@ Bu işlemle 165738 kayıt eğitim için 18416 adet kayıt ise doğrulama için k
 
 BERT modeli için kullanılan parametreler:
 
-input_token_size = 256  
-batch_size = 32
-epoch = 6
-max_grad_num = 1.0
-optimizer = AdamW
-learning_rate = 3e-5
-epsilon = 1e-8
+input_token_size = 256  <br>
+batch_size = 32<br>
+epoch = 6<br>
+max_grad_num = 1.0<br>
+optimizer = AdamW<br>
+learning_rate = 3e-5<br>
+epsilon = 1e-8<br>
 
 Eğitime İlişkin Açıklamalar:
 
