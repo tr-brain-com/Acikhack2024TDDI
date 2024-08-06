@@ -37,41 +37,41 @@ optimizer = AdamW<br>
 learning_rate = 3e-5<br>
 epsilon = 1e-8<br>
 
-Eğitime İlişkin Açıklamalar:
+## Eğitime İlişkin Açıklamalar: ##
 
 ![Screenshot from 2024-08-06 15-39-10](https://github.com/user-attachments/assets/38a6d53f-c334-4c9e-9ff0-d3e95a408029)
 
 Yukarıda belirtilen öğrenme eğrisinden ve aşağıda belirtilen eğitim sonuçlarından da anlaşılacağı üzere modelin öğrenmesi 3-4 dönemden sonra durmakta ve model "OTHER" ifadelerinin orantısız şekilde fazla olmasından dolayı overfit olmaktadır. 
 
-Model eğitim sonuçları şu şekildedir:
+## Model eğitim sonuçları şu şekildedir: ##
 
 ![Screenshot from 2024-08-06 15-49-16](https://github.com/user-attachments/assets/a62c8e8e-2b72-4ada-b6b7-aac0a73885e1)
 
 
-Gerçek Verilerle Yapılan Denemeler:
+## Gerçek Verilerle Yapılan Denemeler:##
 
-Text: 
+<b>Text: </b>
 
 "Avea neden hep Turkcell in reklamlarına diss atıyo"
 
-Sonuç:
+<b>Sonuç:</b>
 
 ![Screenshot from 2024-08-06 16-30-51](https://github.com/user-attachments/assets/ec52f601-2066-4e2c-a9e6-565d05e12799)
 
-Text:
+<b>Text:</b>
 
 "gnçtrkcll üyeleri için kampanya sürüyor. üyeyseniz bu fırsatı kaçırmayın.#sanakapakolsun gnctrkcll"
 
-Sonuç:
+<b>Sonuç:</b>
 
 ![Screenshot from 2024-08-06 16-32-31](https://github.com/user-attachments/assets/9d41355d-5345-429f-9bc4-94a0e2faef00)
 
 
-Text:
+<b>Text:</b>
 
 "Bir @YouTube oynatma listesine video ekledim: Müşteri hizmetleri için sizde buna Turkcell BiP Ön Bakış üzerinde bakabilirsiniz."
 
-Sonuç:
+<b>Sonuç:</b>
 
 ![Screenshot from 2024-08-06 16-35-06](https://github.com/user-attachments/assets/2a9780c4-5c8c-4e78-bbae-587709e86f7b)
 
@@ -81,7 +81,7 @@ Yukarıda ki metriklerden ve açıklamalardan da görüldüğü üzere bulduğum
 "OTHER" ifadeler Accuracy anlamında modeli overfit duruma  götürsede F1 score bize gerçek değeri vermekte; ayrıca eğitim vericinin haricind edindiğimiz gerçek dünya verileri ile de model başarısını göstermektedir.
 
 
-Model indirmek için lütfen iletişime geçin.
+<b>Model indirmek için lütfen iletişime geçin.</b>
 
 https://drive.google.com/drive/folders/1H0nGnQlnkLIxpahd4rLhQ1uWwYWjZ9v7
 
