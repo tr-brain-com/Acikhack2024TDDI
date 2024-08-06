@@ -28,7 +28,7 @@ Eğitim için veri, %90' a %10 olarak ayrılmıştır.<br>
 train_df, val_df = train_test_split(data, test_size=0.10)<br>
 
 
-## Bu işlemle 165738 kayıt eğitim için 18416 adet kayıt ise doğrulama için kullanılmıştır.##
+## Bu işlemle 165738 kayıt eğitim için 18416 adet kayıt ise doğrulama için kullanılmıştır. ##
 
 ## BERT modeli için kullanılan parametreler: ##
 
