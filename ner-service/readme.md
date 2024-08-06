@@ -68,6 +68,15 @@ Sonuç:
 ![Screenshot from 2024-08-06 16-32-31](https://github.com/user-attachments/assets/9d41355d-5345-429f-9bc4-94a0e2faef00)
 
 
+Text:
+
+"Bir @YouTube oynatma listesine video ekledim: Müşteri hizmetleri için sizde buna Turkcell BiP Ön Bakış üzerinde bakabilirsiniz."
+
+Sonuç:
+
+![Screenshot from 2024-08-06 16-35-06](https://github.com/user-attachments/assets/2a9780c4-5c8c-4e78-bbae-587709e86f7b)
+
+
 
 
 
