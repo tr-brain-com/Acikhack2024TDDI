@@ -84,3 +84,16 @@ Modelin performansı, her bir fold için değerlendirilir ve genel sonuçlar aş
 Model indirmek için lütfen iletişime geçin.
 
 https://drive.google.com/file/d/1sMf731pnMHduFdz5NnJ_URVxyZJys9SW/view?usp=drive_link
+
+Duygu analizi için oluşturulan Fast api ile servis haline getirdiğimiz kod için apiçpy dosyasını inceleyebilirsiniz. Servisi çalıştırmak için aşağıdaki kodu kullanabilirsiniz.
+
+```
+uvicorn api:app --reload
+```
+
+
+<p align="center">
+  <img alt="class_distributions" title="BRAIN-TR" src="https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/Screenshot%20from%202024-08-06%2021-08-16.png">
+</p>
+
+
