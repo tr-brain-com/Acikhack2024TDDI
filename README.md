@@ -73,10 +73,6 @@ Eğitim için veri, %90' a %10 olarak ayrılmıştır.<br>
 
 train_df, val_df = train_test_split(data, test_size=0.10)<br>
 
-## Öğrenme Eğrisi ##
-
-![Screenshot from 2024-08-06 15-39-10](https://github.com/user-attachments/assets/38a6d53f-c334-4c9e-9ff0-d3e95a408029)
-
 
 ## Eğitim Sonuçları ##
 
@@ -93,9 +89,7 @@ train_df, val_df = train_test_split(data, test_size=0.10)<br>
 ![Screenshot from 2024-08-06 16-35-06](https://github.com/user-attachments/assets/2a9780c4-5c8c-4e78-bbae-587709e86f7b)
 
 
-
-
-Daha detaylı bilgi almak için 
+NER (Varlık İsmi Çıkarımı) aşamasını adım adım incelemek için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/tree/main/ner-service).
 
 # 🇹🇷 Sentiment Analysis
 
