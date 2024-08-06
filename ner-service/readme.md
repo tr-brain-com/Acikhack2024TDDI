@@ -42,5 +42,12 @@ Eğitime İlişkin Açıklamalar:
 
 ![Screenshot from 2024-08-06 15-39-10](https://github.com/user-attachments/assets/38a6d53f-c334-4c9e-9ff0-d3e95a408029)
 
+Yukarıda belirtilen öğrenme eğrisinden ve aşağıda belirtilen eğitim sonuçlarından da anlaşılacağı üzere modelin öğrenmesi 3-4 dönemden sonra durmakta ve model "OTHER" ifadelerinin orantısız şekilde fazla olmasından dolayı overfit olmaktadır. 
+
+Model eğitim sonuçları şu şekildedir:
+
+
+
+
 
 
