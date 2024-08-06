@@ -38,5 +38,9 @@ optimizer = AdamW
 learning_rate = 3e-5
 epsilon = 1e-8
 
+Eğitime İlişkin Açıklamalar:
+
+![Screenshot from 2024-08-06 15-39-10](https://github.com/user-attachments/assets/38a6d53f-c334-4c9e-9ff0-d3e95a408029)
+
 
 
