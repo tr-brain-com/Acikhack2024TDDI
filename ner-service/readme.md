@@ -20,7 +20,13 @@ Tüm bu süreçler sonucunda elde edilen veri dosyası "ner-service/data/dataset
 
 ![Screenshot from 2024-08-06 15-25-31](https://github.com/user-attachments/assets/65f6d1c0-74a3-46d2-ac25-a0693ab6afcd)
 
+Veriler kullanıma hazır hale getirildikten sonra bu alanda (NER) yapılan çalışmalar incelenmiş ve LSTM, SPACY ve BERT gibi mimarilerle başarılı sonuçlar alınabileceği gözlemlenmiştir. Yaptığımız local testlerde LSTM ve SPACY mimarileri BERT mimarisine göre oldukça kötü sonuçlar üretmiştir. BERT ile transfer öğrenme tekniği kullanılarak "savasy/bert-base-turkish-ner-cased" yapısı üzerine inşaa ettiğimiz ve eğitimi tamamladığımız yapı, denemelerde en iyi skorları üretmiş; eğitim ortamında olmayan gerçek ortam verileri ile yaptığımız testlerde de başarısını göstermiştir.
 
+Eğitim için veri, %90' a %10 olarak ayrılmıştır.
+
+train_df, val_df = train_test_split(data, test_size=0.10)
+
+Bu işlemle 165738 kayıt eğitim için 18416 adet kayıt ise doğrulama için kullanılmıştır.
 
 
 
