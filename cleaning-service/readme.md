@@ -1,6 +1,6 @@
 
 ## Brain-Cleaning-Service
-Doğal Dil İşleme teknolojisi, hammadde olarak metinleri kullanır. Bu sebeple doğal dil işleme görevlerinde verileri temizleme veya veri üzerinde bazı önişleme adımlarını uygulama model oluşturma kadar önemli bir adımdır. Bu çalışma, özellikle yapılandırılmamış veriler üzerinde daha doğru sonuçlar elde edilmesi açısından "cleanin" işlemini modüler olarak sunmayı amaçlamaktadır.
+Doğal Dil İşleme teknolojisi, hammadde olarak metinleri kullanır. Bu sebeple doğal dil işleme görevlerinde verileri temizleme veya veri üzerinde bazı önişleme adımlarını uygulama model oluşturma kadar önemli bir adımdır. Bu çalışma, özellikle yapılandırılmamış veriler üzerinde daha doğru sonuçlar elde edilmesi açısından "cleaning" işlemini moduler olarak sunmayı amaçlamaktadır.
 
 Metinsel verilerimiz olduğunda, kelimeleri makine öğrenme algoritmalarıyla çalışan sayısal özelliklere dönüştürmek için verilere birkaç ön işleme adımı uygulamamız gerekir. Bir problem için ön işleme adımları, esas olarak etki alanına ve problemin kendisine bağlıdır, bu nedenle, tüm adımları her probleme uygulamamız gerekmez. 
 
@@ -76,4 +76,4 @@ Temizleme işleminde uygulanan adımlar şu şekildedir:
 
   ## Sonuçlar
 
-Bilindiği üzere doğal dil işleme problemlerinde metin üzerinde yapılan önişleme adımları büyük önem arzetmektedir. Bu çalışmada önişleme adımları geliştirilirken göz önüne aldığımız en önemli nokta, her adımın model başarımını ve performansını nasıl etkilediği üzerine olmuştur. Burada geliştirilen model, bu çalışma kapsamında en etkili olan önişlem adımlarının bütününden oluşmaktadır. 
+Bilindiği üzere doğal dil işleme problemlerinde metin üzerinde yapılan önişleme adımları büyük önem arzetmektedir. Bu çalışmada önişleme adımları geliştirilirken göz önüne aldığımız en önemli nokta, her adımın model başarımını ve performansını nasıl etkilediği üzerine olmuştur. Burada geliştirilen model, bu çalışma kapsamında en etkili olan ön işlem adımlarının bütününden oluşmaktadır. 
