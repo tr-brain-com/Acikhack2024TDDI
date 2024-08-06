@@ -59,6 +59,15 @@ Sonuç:
 
 ![Screenshot from 2024-08-06 16-30-51](https://github.com/user-attachments/assets/ec52f601-2066-4e2c-a9e6-565d05e12799)
 
+Text:
+
+"gnçtrkcll üyeleri için kampanya sürüyor. üyeyseniz bu fırsatı kaçırmayın.#sanakapakolsun gnctrkcll"
+
+Sonuç:
+
+![Screenshot from 2024-08-06 16-32-31](https://github.com/user-attachments/assets/9d41355d-5345-429f-9bc4-94a0e2faef00)
+
+
 
 
 
