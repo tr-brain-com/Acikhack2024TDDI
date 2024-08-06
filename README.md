@@ -19,6 +19,18 @@ Belgeleri ağaç yapısı (parse tree) olarak temsil eder ve bu sayede belirli e
   <img alt="class_distributions" title="BRAIN-TR" src="https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/Screenshot%20from%202024-07-30%2008-46-02.png" height="300">
 </p>
 
+Teknofest yarışması kapsamında,X platformu, Şikayet web sayfası ve Yıldız Teknik Üniversitesi'nin duygu analizi çalışmasından elde edilen veri setleri birleştirilerek toplamda 20,700 veri noktası içeren kapsamlı bir veri seti oluşturulmuştur. Bu veri seti, çeşitli ürünler ve hizmetlerle ilgili kullanıcı geri bildirimlerini ve şikayetleri kapsamaktadır.
+
+Veri Dağılımı:
+
+    Olumsuz İfadeler: %60
+    Nötr İfadeler: %20
+    Olumlu İfadeler: %20
+
+Bu dağılım, kullanıcıların çoğunlukla olumsuz geri bildirimler sunduğunu ve bu durumun dikkate alınması gereken önemli bir endişe kaynağı olduğunu göstermektedir. Olumsuz ifadelerin yüksek oranı, özellikle müşteri memnuniyeti ve hizmet kalitesi gibi alanlarda potansiyel iyileştirme fırsatları olduğunu işaret edebilir. Diğer yandan, nötr ve olumlu geri bildirimlerin toplamda %40'lık bir orana sahip olması, kullanıcıların bir kısmının ürün ve hizmetlerden memnuniyet duyduğunu veya kararsız kaldığını göstermektedir. Bu istatistik bilgiler bizim veri kaynağımıza göre tespit edilmiştir.
+
+Veri setinin genel eğilimlerini ve kullanıcıların duygusal tepkilerini anlamak için önemli bir başlangıç noktasıdır. Bu veriler, gelecekteki hizmet iyileştirmeleri, müşteri deneyimini geliştirme stratejileri ve pazarlama kampanyaları için değerli içgörüler sağlayabilir. 
+
 Veriseti analiz [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/stats/readme.md).
 
 
