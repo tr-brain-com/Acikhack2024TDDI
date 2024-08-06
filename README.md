@@ -33,10 +33,6 @@ Veri setinin genel eğilimlerini ve kullanıcıların duygusal tepkilerini anlam
 Veriseti analiz [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/stats/readme.md).
 
 
-#  🇹🇷 Exploratory Data Analysis
-Veri seti içerisinde analiz çalışması
-
-# 🇹🇷 Data Preparation
 
 # 🇹🇷 Data Cleanning
 <p align="center">
