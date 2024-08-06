@@ -93,6 +93,22 @@ NER (Varlık İsmi Çıkarımı) aşamasını adım adım incelemek için [tıkl
 
 # 🇹🇷 Sentiment Analysis
 
+Veri seti elde ettiğimiz kaynaklar için Stats kısmında ayrıca anlatılmaktadır. Ayrıntılı bilgi için Stats kısmını tıklayınız.
+
+BERT tabanlı bir model kullanarak Türkçe metinlerde duygu analizi yapmaktadır. Proje kapsamında k-fold çapraz doğrulama yöntemi uygulanmıştır."bert-base-turkish-cased" modeli, Türkçe dilinde büyük ve küçük harf ayrımını dikkate alır. Bu, dil bilgisi ve kelime anlamları açısından önemli olabilir. Cased model kullanmak, özellikle özel isimlerin doğru şekilde anlaşılması ve sınıflandırılması açısından avantaj sağlar.
+
+Her modelimiz ayrı ayrı rest servis olcak şekliyle hazırlanmıştır. Model başarı değerleri aşağıdaki gibidir. 
+| Sınıf        | Precision | Recall | F1-Score | Support |
+|--------------|-----------|--------|----------|---------|
+| 0  (Nötr)          | 0.766     | 0.764  | 0.765    | 577     |
+| 1  (Olumlu)          | 0.757     | 0.790  | 0.773    | 352     |
+| 2  (0lumsuz)          | 0.920     | 0.910  | 0.915    | 1305    |
+| **Accuracy** | |        |        **0.854**   | **2234**|
+| **Macro Avg**| **0.814** | **0.821** | **0.818** | **2234** |
+| **Weighted Avg** | **0.855** | **0.854** | **0.854** | **2234** |
+
+Model training ve Rest Api kodları için ayrıntılı açıklamsı için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/Sentiment%20Analysis/readme.md).
+
 # 🇹🇷 Severity Classification
 <p align="center">
   <img alt="class_distributions" title="BRAIN-TR" src="https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/Screenshot%20from%202024-08-02%2021-03-13.png" height="600">
