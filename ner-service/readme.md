@@ -4,4 +4,12 @@ Varlık İsmi Çıkarma
 
 Geliştirilen model için veriler X platformundan üzerinden @Turkcell varlığına ilişkin yapılan yorumlar toplanarak ve sikayetvar web sayfası üzerinden yapılan scrabing ile veri alınması süreçleri ile temin edilmiştir. Elde edilen 20700 adet veri, açık kaynak Doccano uygulaması ile etiketlenmiş; bu etiketleme işleminde daha detaylı analiz yapılmasını sağlayabilmek adına etiketler, "OPERATOR, URUN, HIZMET, UYGULAMA ve PAKET" gibi başlıklara ayrılmıştır.
 
+Örnek bir etiketleme yapısı şu şekildedir: 
+{
+  "id": 922, 
+  "text": "Şu hayatta 3 şeyden nefret ederim 1.Götoşlar 2.Turkcell 3.TTNET .Bimcell'e geççem mk :D mldfjsşgş", 
+  "label": [[47, 55, "OPERATOR"], [58, 63, "OPERATOR"], [65, 72, "OPERATOR"]], 
+  "Comments": []
+}
 
+Etiketlenen verilerin modeller SpaCy ve Bert gibi modellerde kullanımını kolaylaştırmak amacıyla "/utils/Json2Conll.ipynb" adresinde notebook dosyasında ki yapı geliştirilmiş ve veriler jsonL formatından conLL formatına dönüştürülmüştür.
