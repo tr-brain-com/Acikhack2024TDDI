@@ -50,10 +50,13 @@ Model eğitim sonuçları şu şekildedir:
 
 
 Gerçek Verilerle Yapılan Denemeler:
+
 Text: 
+
 "Avea neden hep Turkcell in reklamlarına diss atıyo"
 
 Sonuç:
+
 ![Screenshot from 2024-08-06 16-30-51](https://github.com/user-attachments/assets/ec52f601-2066-4e2c-a9e6-565d05e12799)
 
 
