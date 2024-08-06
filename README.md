@@ -27,7 +27,6 @@ Veri Dağılımı:
     Nötr İfadeler: %20
     Olumlu İfadeler: %20
 
-Bu dağılım, kullanıcıların çoğunlukla olumsuz geri bildirimler sunduğunu ve bu durumun dikkate alınması gereken önemli bir endişe kaynağı olduğunu göstermektedir. Olumsuz ifadelerin yüksek oranı, özellikle müşteri memnuniyeti ve hizmet kalitesi gibi alanlarda potansiyel iyileştirme fırsatları olduğunu işaret edebilir. Diğer yandan, nötr ve olumlu geri bildirimlerin toplamda %40'lık bir orana sahip olması, kullanıcıların bir kısmının ürün ve hizmetlerden memnuniyet duyduğunu veya kararsız kaldığını göstermektedir. Bu istatistik bilgiler bizim veri kaynağımıza göre tespit edilmiştir.
 
 Veri setinin genel eğilimlerini ve kullanıcıların duygusal tepkilerini anlamak için önemli bir başlangıç noktasıdır. Bu veriler, gelecekteki hizmet iyileştirmeleri, müşteri deneyimini geliştirme stratejileri ve pazarlama kampanyaları için değerli içgörüler sağlayabilir. 
 
