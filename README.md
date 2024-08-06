@@ -82,6 +82,19 @@ train_df, val_df = train_test_split(data, test_size=0.10)<br>
 
 ![Screenshot from 2024-08-06 15-49-16](https://github.com/user-attachments/assets/a62c8e8e-2b72-4ada-b6b7-aac0a73885e1)
 
+## Gerçek Verilerle Deneme ##
+
+<b>Text:</b>
+
+"Bir @YouTube oynatma listesine video ekledim: Müşteri hizmetleri için sizde buna Turkcell BiP Ön Bakış üzerinde bakabilirsiniz."
+
+<b>Sonuç:</b>
+
+![Screenshot from 2024-08-06 16-35-06](https://github.com/user-attachments/assets/2a9780c4-5c8c-4e78-bbae-587709e86f7b)
+
+
+
+
 Daha detaylı bilgi almak için 
 
 # 🇹🇷 Sentiment Analysis
