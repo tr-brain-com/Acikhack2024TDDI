@@ -22,12 +22,15 @@ Tüm bu süreçler sonucunda elde edilen veri dosyası "ner-service/data/dataset
 
 Veriler kullanıma hazır hale getirildikten sonra bu alanda (NER) yapılan çalışmalar incelenmiş ve LSTM, SPACY ve BERT gibi mimarilerle başarılı sonuçlar alınabileceği gözlemlenmiştir. Yaptığımız local testlerde LSTM ve SPACY mimarileri BERT mimarisine göre oldukça kötü sonuçlar üretmiştir. BERT ile transfer öğrenme tekniği kullanılarak "savasy/bert-base-turkish-ner-cased" yapısı üzerine inşaa ettiğimiz ve eğitimi tamamladığımız yapı, denemelerde en iyi skorları üretmiş; eğitim ortamında olmayan gerçek ortam verileri ile yaptığımız testlerde de başarısını göstermiştir.
 
+
 Eğitim için veri, %90' a %10 olarak ayrılmıştır.<br>
+
 train_df, val_df = train_test_split(data, test_size=0.10)<br>
 
-Bu işlemle 165738 kayıt eğitim için 18416 adet kayıt ise doğrulama için kullanılmıştır.
 
-BERT modeli için kullanılan parametreler:
+## Bu işlemle 165738 kayıt eğitim için 18416 adet kayıt ise doğrulama için kullanılmıştır.##
+
+## BERT modeli için kullanılan parametreler: ##
 
 input_token_size = 256  <br>
 batch_size = 32<br>
@@ -48,7 +51,7 @@ Yukarıda belirtilen öğrenme eğrisinden ve aşağıda belirtilen eğitim sonu
 ![Screenshot from 2024-08-06 15-49-16](https://github.com/user-attachments/assets/a62c8e8e-2b72-4ada-b6b7-aac0a73885e1)
 
 
-## Gerçek Verilerle Yapılan Denemeler:##
+## Gerçek Verilerle Yapılan Denemeler: ##
 
 <b>Text: </b>
 
