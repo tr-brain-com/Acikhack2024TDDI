@@ -49,6 +49,15 @@ Model eğitim sonuçları şu şekildedir:
 ![Screenshot from 2024-08-06 15-49-16](https://github.com/user-attachments/assets/a62c8e8e-2b72-4ada-b6b7-aac0a73885e1)
 
 
+Gerçek Verilerle Yapılan Denemeler:
+Text: 
+"Avea neden hep Turkcell in reklamlarına diss atıyo"
+
+Sonuç:
+![Screenshot from 2024-08-06 16-30-51](https://github.com/user-attachments/assets/ec52f601-2066-4e2c-a9e6-565d05e12799)
+
+
+
 
 
 
