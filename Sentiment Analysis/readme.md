@@ -26,7 +26,7 @@ kfold = 10
 train_folds_df = pd.read_csv("deneme_son.csv", sep="|", encoding="utf-8")
 train_folds_df.head()
 ```
-Veri setine kfold adında yeni bir sütun eklenir ve her satıra fold numarası atanır:
+Veri setine k-fold adında yeni bir sütun eklenir ve her satıra fold numarası atanır:
 
 ```
 if 'kfold' not in train_folds_df.columns:
@@ -85,7 +85,7 @@ Model indirmek için lütfen iletişime geçin.
 
 https://drive.google.com/file/d/1sMf731pnMHduFdz5NnJ_URVxyZJys9SW/view?usp=drive_link
 
-Duygu analizi için oluşturulan Fast api ile servis haline getirdiğimiz kod için apiçpy dosyasını inceleyebilirsiniz. Servisi çalıştırmak için aşağıdaki kodu kullanabilirsiniz.
+Duygu analizi için oluşturulan Fast api ile servis haline getirdiğimiz kod için api.py dosyasını inceleyebilirsiniz. Servisi çalıştırmak için aşağıdaki kodu kullanabilirsiniz.
 
 ```
 uvicorn api:app --reload
