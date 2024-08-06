@@ -60,6 +60,30 @@ Bu ek kolonlar sayesinde, daha ayrıntılı ve eyleme geçirilebilir bir duygu a
 
 # 🇹🇷 Named Entitiy Recognation
 
+2024 Teknofest Doğal Dil İşleme (NLP) senaryo kategorisinde, Türkcell gibi mobil operatörler ve bunlarla ilişkili olan ürünler, paketler ve uygulamaları (Superonline, Platinum Paket, BİP, Fizy, Lifebox, Müşteri Hizmetleri vb.) kapsayan, metinler içinden ilgili varlıkları çıkarmak amacıyla geliştirilmiş olan projedir.
+
+Geliştirilen model için veriler X platformundan üzerinden @Turkcell varlığına ilişkin yapılan yorumlar toplanarak ve sikayetvar web sayfası üzerinden yapılan scrabing ile veri alınması süreçleri ile temin edilmiştir. Elde edilen 20700 adet veri, açık kaynak Doccano uygulaması ile etiketlenmiş; bu etiketleme işleminde daha detaylı analiz yapılmasını sağlayabilmek adına etiketler, <b><u>"OPERATOR, URUN, HIZMET, UYGULAMA ve PAKET"</u></b> gibi başlıklara ayrılmıştır.
+
+
+Tüm bu süreçler sonucunda elde edilen veri dosyası "ner-service/data/dataset.conll" adresinde bulunmaktadır. Son durumda tag ve örnek sayıları aşağıdaki gibi oluşmuştur.
+
+![Screenshot from 2024-08-06 15-25-31](https://github.com/user-attachments/assets/65f6d1c0-74a3-46d2-ac25-a0693ab6afcd)
+
+Eğitim için veri, %90' a %10 olarak ayrılmıştır.<br>
+
+train_df, val_df = train_test_split(data, test_size=0.10)<br>
+
+## Öğrenme Eğrisi ##
+
+![Screenshot from 2024-08-06 15-39-10](https://github.com/user-attachments/assets/38a6d53f-c334-4c9e-9ff0-d3e95a408029)
+
+
+## Eğitim Sonuçları ##
+
+![Screenshot from 2024-08-06 15-49-16](https://github.com/user-attachments/assets/a62c8e8e-2b72-4ada-b6b7-aac0a73885e1)
+
+Daha detaylı bilgi almak için 
+
 # 🇹🇷 Sentiment Analysis
 
 # 🇹🇷 Severity Classification
