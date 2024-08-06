@@ -46,6 +46,9 @@ Yukarıda belirtilen öğrenme eğrisinden ve aşağıda belirtilen eğitim sonu
 
 Model eğitim sonuçları şu şekildedir:
 
+![Screenshot from 2024-08-06 15-49-16](https://github.com/user-attachments/assets/a62c8e8e-2b72-4ada-b6b7-aac0a73885e1)
+
+
 
 
 
