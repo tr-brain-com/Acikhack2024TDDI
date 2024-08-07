@@ -28,9 +28,9 @@ Veri Dağılımı:
     Olumlu İfadeler: %20
 
 
-Veri setinin genel eğilimlerini ve kullanıcıların duygusal tepkilerini anlamak için önemli bir başlangıç noktasıdır. Bu veriler, gelecekteki hizmet iyileştirmeleri, müşteri deneyimini geliştirme stratejileri ve pazarlama kampanyaları için değerli içgörüler sağlayabilir. 
+Veri seti, genel eğilimleri ve kullanıcıların duygusal tepkilerini anlamak için önemli bir başlangıç noktasıdır. Bu veriler, gelecekteki hizmet iyileştirmeleri, müşteri deneyimini geliştirme stratejileri ve pazarlama kampanyaları için değerli içgörüler sağlayabilir. 
 
-Veriseti analiz [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/stats/readme.md).
+Veri seti analiz [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/stats/readme.md).
 
 
 
