@@ -68,3 +68,13 @@ def splitSentencesByDependecies(data):
 
 Örnek olarak aldığımız "tt çekmiyor vodafone hizmeti rezalet ötesi kesinti oluyor. Turkcell fiyat farkını hak ediyor." cümlesinin ayırma için geliştirilen algoritma çıktı olarak 
 *[['tt çekmiyor', ['tt]],  ['vodafone hizmeti rezalet ötesi kesinti oluyor', ['vodafone']] , ['Turkcell fiyat farkını hak ediyor', ['Turkcell']]* şeklinde dizi yapısında bize bu üç farklı veri vermektedir. Üç farklı veride cümleler ve o cümledeki farklı varlıklar bulunmaktadır. Bu çıktıyı sağlayarak amaç bu aşamadan sonraki sentiment analiz için cümle ve cümle değerlendirmeleri yapıldıktan sonra değerlendirmenin sahip olacağı varlığı belirlemiş olmaktır.
+
+Geliştirdiğimiz hibrid yaklaşım, oldukça başarılı sonuçlar vermiştir. Gerçek bir örnek üzerinde şu şekilde etkileyici sonuçlar alınmıştır:
+
+<b>Text:</b><br>
+tt çekmiyor vodafone hizmeti rezalet ötesi kesinti oluyor. Turkcell fiyat farkını hak ediyor.<br>
+
+<b>Sonuç:</b><br>
+![image](https://github.com/user-attachments/assets/c16eb716-dbec-4338-8036-df62a66ad74b)
+
+
