@@ -10,8 +10,28 @@ Bu çalışma için ürettiğimiz, geliştirdiğimiz veri (ayrıntılı bilgi st
 
 Spacy dilbilimsel olarak hazır bileşenler içeren metin sınıflandırma, etikete bağlı dayalı bağımlılıkları analiz etme, cümleleri bölme, morfolojik analiz ve kök ayırma gibi bir çok problemin çözümünde kullanılan bir kütüphanedir. Türkçe için cümledeki kelimelerin bağımlıklarını bulmak için tr_core_web_trf adında daha önce eğitilmiş, tranformer tabanlı pipeline model kullanıldı. CNN-tabanlı diğer modellerden tr_core_web_lg, tr_core_web_md gibi modellere göre daha yüksek doğruluk sunduğu için tercih edildi. Model herkese açık bir şekilde erişilebilir ve linkten ulaşılabilir durumdadır.<br>https://github.com/turkish-nlp-suite/turkish-spacy-models
 
-Bağlılık Ayrıştırması(Dependency Parsing) ile hedefimiz bir cümle içerisindeki, sözcükler arasındaki ilişkileri ve ilişki türlerini belirleyerek ilgili cümlenin çözümlemesini sağladığından cümledeki kelime öbeklerini çıkarmada bize yol gösterici olacaktır. Örneğin "tt çekmiyor vodafone hizmeti rezalet ötesi kesinti oluyor. Turkcell fiyat farkını hak ediyor." cümlesini ele alacak olursak 
+Bağlılık Ayrıştırması(Dependency Parsing) ile hedefimiz bir cümle içerisindeki, sözcükler arasındaki ilişkileri ve ilişki türlerini belirleyerek ilgili cümlenin çözümlemesini sağladığından cümledeki kelime öbeklerini çıkarmada bize yol gösterici olacaktır. Örneğin "tt çekmiyor vodafone hizmeti rezalet ötesi kesinti oluyor. Turkcell fiyat farkını hak ediyor." cümlesini ele alalım.
 
 <p align="center">
-  <img alt="Dependency Parsing Uygulanmış Örnek Bir Cümle" title="BRAIN-TR" src="https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/dependency_parsing_01.png" height="300">
+  <img alt="Dependency Parsing Uygulanmış Örnek Bir Cümle" title="BRAIN-TR" src="https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/dependecy_parsing_01.png" height="300">
 </p>
+
+Yukarıdaki tablo için örnek python script ise aşağıdaki gibidir.
+
+```python 
+def outDependencyForm(doc, start_idx):
+    words_dict = dict()
+    row_list = []
+    for token in doc:
+        ancestors = [t.text for t in token.ancestors]
+        children = [t.text for t in token.children]
+        row_list.append(
+            [(start_idx + token.i), token.text, token.lemma_, token.pos_, token.dep_, token.tag_, ancestors, children])
+    df_dependency = pd.DataFrame(row_list, columns=['wordindex', 'token', 'lemma_', 'pos_', 'dep_', 'tag_', 'ancestors',
+                                                    'children'])
+    df_dependency.reset_index(drop=True, inplace=True)
+
+    return df_dependency
+```
+
+Yukarıdaki tabloda iki önemli konu bulunmakta, bunlardan ilki *dep_* kolonu ile verilen her bir kelime veya token'in bağımlılığı bir diğeri ise *pos_* ile belirltilen part-of-speech tagger(metin parçası etiketleme) ile verilen kolondur.
