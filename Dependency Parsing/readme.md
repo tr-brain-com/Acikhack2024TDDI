@@ -16,6 +16,9 @@ Bağlılık Ayrıştırması(Dependency Parsing) ile hedefimiz bir cümle içeri
   <img alt="Dependency Parsing Uygulanmış Örnek Bir Cümle" title="BRAIN-TR" src="https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/dependecy_parsing_01.png" height="300">
 </p>
 
+![dependency_plot](https://github.com/user-attachments/assets/72a0bac5-818f-4afc-a2a8-e7d289ec2740)
+
+
 Yukarıdaki tablo için örnek python script ise aşağıdaki gibidir.
 
 ```python 
