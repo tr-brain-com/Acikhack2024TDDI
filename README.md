@@ -7,19 +7,18 @@ Bu kısma real time uygulama gif eklenebilir
 <p align="center">
   <img alt="class_distributions" title="BRAIN-TR" src="https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/beautifulsoup.jpg" height="300">
 </p>
-Veri madenciliği, büyük veri setlerinden anlamlı ifadeler, ilişkiler ve bilgiler çıkarmak için kullanılan bir süreçtir. Veri madenciliği, veri hazırlama, model oluşturma, değerlendirme ve sonuçları yorumlama gibi adımları içerir.
-BeautifulSoup ve Scrapy: Web kazıma (web scraping) için kullanılır. İnternetten veri çekmek ve analiz etmek için kullanışlıdır. BeautifulSoup, Python'da HTML ve XML dosyalarını ayrıştırmak ve analiz etmek için ,
-kullanılan bir kütüphanedir. Web sayfalarından veri çekmek, web kazıma (web scraping) işlemlerinde sıklıkla tercih edilir. HTML ve XML dosyalarını kolayca ayrıştırır.Belgelerdeki elementlere, etiketlere ve niteliklere hızlı ve kolay erişim sağlar.
-Belgeleri ağaç yapısı (parse tree) olarak temsil eder ve bu sayede belirli elementleri seçip işlemek kolaylaşır.
 
-2024 Teknofest Türkçe Dogal Dil İşleme kategorisi için data minning code blogunu adım adım incelemek için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/dataMinning/readme.md).
+Veri madenciliği, büyük veri setlerinden anlamlı ifadeler, ilişkiler ve bilgiler çıkarmak için kullanılan bir süreçtir. Veri madenciliği, veri hazırlama, model oluşturma, değerlendirme ve sonuçları yorumlama gibi adımları içerir.
+BeautifulSoup ve Scrapy: Web kazıma (web scraping) için kullanılır. İnternetten veri çekmek ve analiz etmek için kullanışlıdır. BeautifulSoup, Python'da HTML ve XML dosyalarını ayrıştırmak ve analiz etmek için kullanılan bir kütüphanedir. Web sayfalarından veri çekmek, web kazıma işlemlerinde sıklıkla tercih edilir. HTML ve XML dosyalarını kolayca ayrıştırır. Belgelerdeki elementlere, etiketlere ve niteliklere hızlı ve kolay erişim sağlar.
+Belgeleri ağaç yapısı (parse tree) olarak temsil eder ve bu sayede belirli elementleri seçip işlemek kolaylaşır.
+2024 Teknofest Türkçe Doğal Dil İşleme kategorisi için veri madenciliği (data mining) kod bloğunu adım adım incelemek için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/dataMinning/readme.md).
 
 #  🇹🇷 Data Stats
 <p align="center">
   <img alt="class_distributions" title="BRAIN-TR" src="https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/Screenshot%20from%202024-07-30%2008-46-02.png" height="300">
 </p>
 
-Teknofest yarışması kapsamında,X platformu, Şikayet web sayfası ve Yıldız Teknik Üniversitesi'nin duygu analizi çalışmasından elde edilen veri setleri birleştirilerek toplamda 20,700 veri noktası içeren kapsamlı bir veri seti oluşturulmuştur. Bu veri seti, çeşitli ürünler ve hizmetlerle ilgili kullanıcı geri bildirimlerini ve şikayetleri kapsamaktadır.
+Teknofest yarışması kapsamında, X (Twitter) platformu, ŞikayetVar web sayfası ve Yıldız Teknik Üniversitesi'nin duygu analizi çalışmasından elde edilen veri setleri birleştirilerek toplamda 20,700 veri noktası içeren kapsamlı bir veri seti oluşturulmuştur. Bu veri seti, çeşitli ürünler ve hizmetlerle ilgili kullanıcı geri bildirimlerini ve şikayetleri kapsamaktadır.
 
 Veri Dağılımı:
 
@@ -30,7 +29,7 @@ Veri Dağılımı:
 
 Veri seti, genel eğilimleri ve kullanıcıların duygusal tepkilerini anlamak için önemli bir başlangıç noktasıdır. Bu veriler, gelecekteki hizmet iyileştirmeleri, müşteri deneyimini geliştirme stratejileri ve pazarlama kampanyaları için değerli içgörüler sağlayabilir. 
 
-Veri seti analiz [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/stats/readme.md).
+Veri seti analizi için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/stats/readme.md).
 
 
 
@@ -38,7 +37,7 @@ Veri seti analiz [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDD
 <p align="center">
   <img alt="class_distributions" title="BRAIN-TR" src="https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/cleaning.png" height="300">
 </p>
-Cleaning service, bu çalışmaya uygun olarak yapılan denemeler sonucunda bir standart belirlenerek çoğu bölümü opsiyonel olarak kullanılabilecek şekilde geliştirilmiştir. 
+Temizleme servisi (Cleaning service), bu çalışmaya uygun olarak yapılan denemeler sonucunda bir standart belirlenerek çoğu bölümü isteğe bağlı olarak kullanılabilecek şekilde geliştirilmiştir. 
 
 Temizleme servisi hakkında daha ayrıntılı bilgi almak ve detaylar için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/cleaning-service/readme.md).
 
@@ -47,10 +46,10 @@ Temizleme servisi hakkında daha ayrıntılı bilgi almak ve detaylar için [tı
 
 2024 Teknofest Doğal Dil İşleme (NLP) senaryo kategorisinde, Turkcell gibi mobil operatörler ve bunlarla ilişkili olan ürünler, paketler ve uygulamaları (Superonline, Platinum Paket, BİP, Fizy, Lifebox, Müşteri Hizmetleri vb.) kapsayan, metinler içinden ilgili varlıkları çıkarmak amacıyla geliştirilmiş olan projedir.
 
-Geliştirilen model için veriler X platformu üzerinden @Turkcell varlığına ilişkin yapılan yorumlar toplanarak ve sikayetvar web sayfası üzerinden yapılan scraping ile veri alınması süreçleri ile temin edilmiştir. Elde edilen 20700 adet veri, açık kaynak Doccano uygulaması ile etiketlenmiş; bu etiketleme işleminde daha detaylı analiz yapılmasını sağlayabilmek adına etiketler, <b><u>"OPERATOR, URUN, HIZMET, UYGULAMA ve PAKET"</u></b> gibi başlıklara ayrılmıştır.
+Geliştirilen model için veriler X platformu üzerinden @Turkcell varlığına ilişkin yapılan yorumlar toplanarak ve sikayetvar web sayfası üzerinden yapılan kazıma ile veri alınması süreçleri ile temin edilmiştir. Elde edilen 20700 adet veri, açık kaynak Doccano uygulaması ile etiketlenmiş; bu etiketleme işleminde daha detaylı analiz yapılmasını sağlayabilmek adına etiketler, <b><u>"OPERATOR, URUN, HIZMET, UYGULAMA ve PAKET"</u></b> gibi başlıklara ayrılmıştır.
 
 
-Tüm bu süreçler sonucunda elde edilen veri dosyası "ner-service/data/dataset.conll" adresinde bulunmaktadır. Son durumda tag ve örnek sayıları aşağıdaki gibi oluşmuştur.
+Tüm bu süreçler sonucunda elde edilen veri dosyası "ner-service/data/dataset.conll" adresinde bulunmaktadır. Son durumda etiket ve örnek sayıları aşağıdaki gibi oluşmuştur.
 
 ![Screenshot from 2024-08-06 15-25-31](https://github.com/user-attachments/assets/65f6d1c0-74a3-46d2-ac25-a0693ab6afcd)
 
@@ -74,17 +73,17 @@ train_df, val_df = train_test_split(data, test_size=0.10)<br>
 ![Screenshot from 2024-08-06 16-35-06](https://github.com/user-attachments/assets/2a9780c4-5c8c-4e78-bbae-587709e86f7b)
 
 
-NER (Varlık İsmi Çıkarımı) aşamasını adım adım incelemek için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/tree/main/ner-service).
+Varlık İsmi Çıkarımı (NER) aşamasını adım adım incelemek için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/tree/main/ner-service).
 
-# 🇹🇷 Dependency Parsing
+# 🇹🇷 Bağımlılık Analizi (Dependency Parsing)
 
-Bu bölüm, problem tanımı uyarınca cümle içerisinde geçen farklı varlıklara yönelik duyguları tespit etmek amacıyla geliştirilmiştir. Yapılan araştırmalar ve gerçekleştirilen çalışmalar incelendiğinde problem çözümüne yönelik olarak <b>Aspect Based</b> ve <b>Entity Based</b> olarak iki farklı yöntem geliştirildiği; bu yöntemlerin  seçimi konusunda da alana özgü verilerin yapısının etkili olduğu fark edilmiştir.<br>
+Bu bölüm, problem tanımı uyarınca cümle içerisinde geçen farklı varlıklara yönelik duyguları tespit etmek amacıyla geliştirilmiştir. Yapılan araştırmalar ve gerçekleştirilen çalışmalar incelendiğinde problem çözümüne yönelik olarak <b>Yönelim Temelli (Aspect Based)</b> ve <b>Varlık Temelli (Entity Based)</b> olarak iki farklı yöntem geliştirildiği; bu yöntemlerin seçimi konusunda da alana özgü verilerin yapısının etkili olduğu fark edilmiştir.<br>
 
-<b>Aspect Based</b>, bir cümlede veya belgede belirtilen belirli yönlerle ilişkili duyguyu belirleme görevini ifade eder. <br>
+<b>Yönelim Temelli (Aspect Based)</b>, bir cümlede veya belgede belirtilen belirli yönlerle ilişkili duyguyu belirleme görevini ifade eder. <br>
 
-<b>Entity Based</b> olarak ifade edilen yapı ise cümle içinde belirlenen varlıklara yönelen duyguların tespitini sağlamayı ifade eder.<br>
+<b>Varlık Temelli (Entity Based)</b> olarak ifade edilen yapı ise cümle içinde belirlenen varlıklara yönelen duyguların tespitini sağlamayı ifade eder.<br>
 
-Bu çalışma için ürettiğimiz, geliştirdiğimiz veri (ayrıntılı bilgi stats içerisinde mevcuttur), hem entity hemde aspect tabanlı hibrid bir yapının ortaya konulmasını bizim için gerekli kılmıştır. Bu noktada <b>Dependency Parsing</b> olarak bilinen bir dile ait cümle yapılarının detaylı şekilde incelenmesi ve yorumlanması gerekmiştir. Dependency parsing ile  cümle bölümlendirmesi ve entity tabanlı ayrıştırma birlikte öğrenilir. Mevcut problemde entity bazlı duyguları veya entity yönelik duyguları tespit etmek amacıyla SpaCy kullanarak kural tabanlı  bir yapı inşa edilmiştir. Bu kural tabanlı yapı, metinlerin standart cümle yapısına uymayacağı (twitter verileri gb. ) fikrinden hareketle ortaya çıkarılmış, metin içerisinde ki varlıklara yönelen duyguların tespitinde oldukça başarılı sonuçlar elde edilmiştir.<br>
+Bu çalışma için ürettiğimiz, geliştirdiğimiz veri (ayrıntılı bilgi stats içerisinde mevcuttur), hem entity hemde aspect tabanlı hibrit bir yapının ortaya konulmasını bizim için gerekli kılmıştır. Bu noktada <b>Bağımlılık Analizi (Dependency Parsing)</b> olarak bilinen bir dile ait cümle yapılarının detaylı şekilde incelenmesi ve yorumlanması gerekmiştir. Bağımlılık Analizi ile cümle bölümlendirmesi ve varlık tabanlı ayrıştırma birlikte öğrenilir. Mevcut problemde varlık bazlı veya varlığa yönelik duyguları tespit etmek amacıyla SpaCy kullanarak kural tabanlı bir yapı inşa edilmiştir. Bu kural tabanlı yapı, metinlerin standart cümle yapısına uymayacağı (X verileri vb.) fikrinden hareketle ortaya çıkarılmış, metin içerisinde ki varlıklara yönelen duyguların tespitinde oldukça başarılı sonuçlar elde edilmiştir.<br>
 
 Çalışma sonrası gerçek bir örneğe ilişkin sonuçlar şu şekildedir:<br>
 
@@ -102,7 +101,7 @@ Ayrıntılı bilgi için [tıklayınız](https://github.com/tr-brain-com/Acikhac
 
 Veri seti elde ettiğimiz kaynaklar için Stats kısmında ayrıca anlatılmaktadır. Ayrıntılı bilgi için Stats kısmını tıklayınız.<br>
 
-BERT tabanlı bir model kullanarak Türkçe metinlerde duygu analizi yapmaktadır. Proje kapsamında k-fold çapraz doğrulama yöntemi uygulanmıştır."bert-base-turkish-cased" modeli, Türkçe dilinde büyük ve küçük harf ayrımını dikkate alır. Bu, dil bilgisi ve kelime anlamları açısından önemli olabilir. Cased model kullanmak, özellikle özel isimlerin doğru şekilde anlaşılması ve sınıflandırılması açısından avantaj sağlar.
+BERT tabanlı bir model kullanarak Türkçe metinlerde duygu analizi yapmaktadır. Proje kapsamında k-fold çapraz doğrulama yöntemi uygulanmıştır. "bert-base-turkish-cased" modeli, Türkçe dilinde büyük ve küçük harf ayrımını dikkate alır. Bu, dil bilgisi ve kelime anlamları açısından önemli olabilir. Cased model kullanmak, özellikle özel isimlerin doğru şekilde anlaşılması ve sınıflandırılması açısından avantaj sağlar.
 
 Her modelimiz ayrı ayrı rest servis olcak şekliyle hazırlanmıştır. Model başarı değerleri aşağıdaki gibidir. 
 | Sınıf        | Precision | Recall | F1-Score | Support |
@@ -114,21 +113,21 @@ Her modelimiz ayrı ayrı rest servis olcak şekliyle hazırlanmıştır. Model 
 | **Macro Avg**| **0.814** | **0.821** | **0.818** | **2234** |
 | **Weighted Avg** | **0.855** | **0.854** | **0.854** | **2234** |
 
-Model training ve Rest Api kodlarının ayrıntılı açıklaması için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/Sentiment%20Analysis/readme.md).
+Model eğitimi ve Rest Api kodlarının ayrıntılı açıklaması için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/Sentiment%20Analysis/readme.md).
 
-# 🇹🇷 Severity Classification
+# 🇹🇷 Aciliyet (Severity) Sınıflandırması
 <p align="center">
   <img alt="class_distributions" title="BRAIN-TR" src="https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/Screenshot%20from%202024-08-02%2021-03-13.png" height="600">
 </p>
 
-2024 Teknofest Doğal Dil İşleme (NLP) senaryo kategorisinde, Turkcell ve ürünleri (Superonline, Platinum Paket, BİP, Fizy, Lifebox vb.) hakkında kullanıcı yorumlarına dayalı özgün bir entity bazlı duygu analizi gerçekleştirilmiştir. Bu çalışmada, yalnızca yorumların duygusal tonu belirlenmemiş, aynı zamanda yorumların taşıdığı önem veya aciliyet düzeyini belirtmek için "severity" adı verilen ekstra bir kategori de eklenmiştir. "Severity" kolonu, metinde tartışılan konunun aciliyet veya önem derecesini ifade eder; 0 önemsiz, 1 orta derecede önemli ve 2 acil bir durumu belirtir. Ayrıntılı bilgi ve kod için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/severity%20Classification/readme.md).
+2024 Teknofest Doğal Dil İşleme (NLP) senaryo kategorisinde, Turkcell ve ürünleri (Superonline, Platinum Paket, BİP, Fizy, Lifebox vb.) hakkında kullanıcı yorumlarına dayalı özgün bir entity bazlı duygu analizi gerçekleştirilmiştir. Bu çalışmada, yalnızca yorumların duygusal tonu belirlenmemiş, aynı zamanda yorumların taşıdığı önem veya aciliyet düzeyini belirtmek için "severity" adı verilen ekstra bir kategori de eklenmiştir. "Severity" kolonu, metinde tartışılan konunun aciliyet veya önem derecesini ifade eder; 0 'aciliyeti bulunmayan', 1 'orta derecede acil' ve 2 'acil' bir durumu belirtir. Ayrıntılı bilgi ve kod için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/severity%20Classification/readme.md).
 
 # 🇹🇷 Reason Classification
 <p align="center">
   <img alt="class_distributions" title="BRAIN-TR" src="https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/Screenshot%20from%202024-08-02%2021-21-59.png" height="600">
 </p>
 
-Teknofest 2024'teki Doğal Dil İşleme (NLP) senaryo kategorisi yarışmasında katıldığımız proje, entity bazlı duygu analizi üzerine odaklanmaktadır. Projemizde, Turkcell ve ürünleri hakkında yazılan metinlerde olumsuzluğa sebep olan kategorilerin tespitini amaçlayarak özgünlük sağlamak için veri setine "reason" (sebep) kolonu eklenmiştir. Bu kolon, kullanıcıların olumsuz duygu bildirdiği durumlarda hangi kategoriye (örneğin bayi, fatura, kampanya) dair olumsuzluk yaşadıklarını belirlememize olanak tanımaktadır.Ayrıntılı bilgi ve kod için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/reason%20classificaiton/readme.md).
+Teknofest 2024'teki Doğal Dil İşleme (NLP) senaryo kategorisi yarışmasında katıldığımız proje, varlık bazlı duygu analizi üzerine odaklanmaktadır. Projemizde, Turkcell ve ürünleri hakkında yazılan metinlerde olumsuzluğa sebep olan kategorilerin tespitini amaçlayarak özgünlük sağlamak için veri setine "sebep (reason)" kolonu eklenmiştir. Bu kolon, kullanıcıların olumsuz duygu bildirdiği durumlarda hangi kategoriye (örneğin bayi, fatura, kampanya) dair olumsuzluk yaşadıklarını belirlememize olanak tanımaktadır. Ayrıntılı bilgi ve kod için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/reason%20classificaiton/readme.md).
 
 
 # 🇹🇷 Application
@@ -139,20 +138,19 @@ Teknofest 2024'teki Doğal Dil İşleme (NLP) senaryo kategorisi yarışmasında
 
 | Category       | Description                                                              
 | ----------     | ---------------------------------------------
-| Entity Listesi          | Metinde geçen varlıkların listesini içerir. Yaklaşık 100 farklı varlık tespit ettik, böylece analizimizin geniş bir kapsama sahip olmasını sağladık.
+| Entity Listesi          | Metinde geçen varlıkların listesini içerir. Yaklaşık 100 farklı varlık tespit edilmiş, böylece analizin geniş bir kapsama sahip olmasını sağlanmıştır.
 | Target      | Tespit edilen varlıkla ilişkili duygu burada olumlu, olumsuz veya nötr olarak sınıflandırılır. Bu, yarışmanın gereksinimlerine uygun olarak belirlenmiştir.       
 | Severity         | Metinde tartışılan konunun aciliyet veya önem derecesini belirtir. 0 önemsiz, 1 orta derecede önemli ve 2 acil bir durumu ifade eder           
 | Reason         | Olumsuz duygular için belirlenmiştir, sorunun kaynağını belirler. Örneğin, fatura, ağ (network) sorunları, mobil numara taşıma (mnp) gibi. Bu, müşteri memnuniyetsizliğinin temel nedenini anlamamıza yardımcı olur    
-| Muhatap         | Turkcell'in muhatap olup olmadığını belirtir.     
+| Muhatap         | Girdinin ana muhatabının Turkcell olup olmadığını belirtir.     
 | Mobil         | Sorunun mobil hat ile ilgili olup olmadığını belirtir      
 | Sabit         | Sorunun sabit hat ile ilgili olup olmadığını belirtir.      
 | Ek Paket         |  Sorunun ek paketlerden kaynaklanıp kaynaklanmadığını belirtir.   
-|Kampanya        |   Sorunun bir kampanyadan (örneğin, promosyon teklifleri, ekstra GB) kaynaklanıp kaynaklanmadığını belirtir.
+| Kampanya        |   Sorunun bir kampanyadan (örneğin, promosyon teklifleri, ekstra GB) kaynaklanıp kaynaklanmadığını belirtir.
 | Diğer Ürün/Uygulama         |  Turkcell'in hangi uygulama veya ürününden (örneğin, BIP, Fizy, Platinum) kaynaklandığını belirler.   
 | Reklam         |  Turkcell'in reklamları, sponsorlukları veya boykotları ile ilgili şikayetleri kaydeder.      
 | Çağrı Merkezi         |Çağrı merkezi ve teknik destek ile ilgili şikayetleri bu kolonda belirtilir.     
 | Bayi         |      Satış noktaları ve mağazalarla ilgili şikayetleri kaydeder.
-| Aksiyon       |  Aciliyet seviyesi 1 veya 2 olan durumlar için belirlenir, aksiyon alınıp alınmayacağını belirler. 0 aksiyon alınmayacağını, 1 ise müdahale edilmesi gerektiğini ifade eder.    
 
 Bu ek kolonlar sayesinde, daha ayrıntılı ve eyleme geçirilebilir bir duygu analizi sunmayı amaçlıyoruz. Yaklaşımımız, yarışmanın gereksinimlerini karşılamakla kalmayıp, aynı zamanda Turkcell'in müşteri şikayetlerine daha etkili bir şekilde yanıt vermesine ve genel müşteri memnuniyetini ve hizmet kalitesini artırmasına yardımcı olabilecek değerli içgörüler sunmaktadır. Bu geliştirilmiş veri seti yapısı, müşteri geri bildirimlerinin daha derinlemesine anlaşılmasını sağlar ve hedefe yönelik müdahaleler ile stratejik karar alma süreçlerini destekler.
 # 🇹🇷 Results
