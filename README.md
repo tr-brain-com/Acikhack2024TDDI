@@ -45,7 +45,7 @@ Temizleme servisi hakkında daha ayrıntılı bilgi almak ve detaylar için [tı
 
 # 🇹🇷 Named Entity Recognition
 
-2024 Teknofest Doğal Dil İşleme (NLP) senaryo kategorisinde, Türkcell gibi mobil operatörler ve bunlarla ilişkili olan ürünler, paketler ve uygulamaları (Superonline, Platinum Paket, BİP, Fizy, Lifebox, Müşteri Hizmetleri vb.) kapsayan, metinler içinden ilgili varlıkları çıkarmak amacıyla geliştirilmiş olan projedir.
+2024 Teknofest Doğal Dil İşleme (NLP) senaryo kategorisinde, Turkcell gibi mobil operatörler ve bunlarla ilişkili olan ürünler, paketler ve uygulamaları (Superonline, Platinum Paket, BİP, Fizy, Lifebox, Müşteri Hizmetleri vb.) kapsayan, metinler içinden ilgili varlıkları çıkarmak amacıyla geliştirilmiş olan projedir.
 
 Geliştirilen model için veriler X platformu üzerinden @Turkcell varlığına ilişkin yapılan yorumlar toplanarak ve sikayetvar web sayfası üzerinden yapılan scraping ile veri alınması süreçleri ile temin edilmiştir. Elde edilen 20700 adet veri, açık kaynak Doccano uygulaması ile etiketlenmiş; bu etiketleme işleminde daha detaylı analiz yapılmasını sağlayabilmek adına etiketler, <b><u>"OPERATOR, URUN, HIZMET, UYGULAMA ve PAKET"</u></b> gibi başlıklara ayrılmıştır.
 
@@ -121,7 +121,7 @@ Model training ve Rest Api kodlarının ayrıntılı açıklaması için [tıkla
   <img alt="class_distributions" title="BRAIN-TR" src="https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/Screenshot%20from%202024-08-02%2021-03-13.png" height="600">
 </p>
 
-2024 Teknofest Doğal Dil İşleme (NLP) senaryo kategorisinde, Türkcell ve ürünleri (Superonline, Platinum Paket, BİP, Fizy, Lifebox vb.) hakkında kullanıcı yorumlarına dayalı özgün bir entity bazlı duygu analizi gerçekleştirilmiştir. Bu çalışmada, yalnızca yorumların duygusal tonu belirlenmemiş, aynı zamanda yorumların taşıdığı önem veya aciliyet düzeyini belirtmek için "severity" adı verilen ekstra bir kategori de eklenmiştir. "Severity" kolonu, metinde tartışılan konunun aciliyet veya önem derecesini ifade eder; 0 önemsiz, 1 orta derecede önemli ve 2 acil bir durumu belirtir. Ayrıntılı bilgi ve kod için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/severity%20Classification/readme.md).
+2024 Teknofest Doğal Dil İşleme (NLP) senaryo kategorisinde, Turkcell ve ürünleri (Superonline, Platinum Paket, BİP, Fizy, Lifebox vb.) hakkında kullanıcı yorumlarına dayalı özgün bir entity bazlı duygu analizi gerçekleştirilmiştir. Bu çalışmada, yalnızca yorumların duygusal tonu belirlenmemiş, aynı zamanda yorumların taşıdığı önem veya aciliyet düzeyini belirtmek için "severity" adı verilen ekstra bir kategori de eklenmiştir. "Severity" kolonu, metinde tartışılan konunun aciliyet veya önem derecesini ifade eder; 0 önemsiz, 1 orta derecede önemli ve 2 acil bir durumu belirtir. Ayrıntılı bilgi ve kod için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/severity%20Classification/readme.md).
 
 # 🇹🇷 Reason Classification
 <p align="center">
@@ -143,18 +143,18 @@ Teknofest 2024'teki Doğal Dil İşleme (NLP) senaryo kategorisi yarışmasında
 | Target      | Tespit edilen varlıkla ilişkili duygu burada olumlu, olumsuz veya nötr olarak sınıflandırılır. Bu, yarışmanın gereksinimlerine uygun olarak belirlenmiştir.       
 | Severity         | Metinde tartışılan konunun aciliyet veya önem derecesini belirtir. 0 önemsiz, 1 orta derecede önemli ve 2 acil bir durumu ifade eder           
 | Reason         | Olumsuz duygular için belirlenmiştir, sorunun kaynağını belirler. Örneğin, fatura, ağ (network) sorunları, mobil numara taşıma (mnp) gibi. Bu, müşteri memnuniyetsizliğinin temel nedenini anlamamıza yardımcı olur    
-| Muhatap         | Türkcel'in muhatap olup olmadığını belirtir.     
+| Muhatap         | Turkcell'in muhatap olup olmadığını belirtir.     
 | Mobil         | Sorunun mobil hat ile ilgili olup olmadığını belirtir      
 | Sabit         | Sorunun sabit hat ile ilgili olup olmadığını belirtir.      
 | Ek Paket         |  Sorunun ek paketlerden kaynaklanıp kaynaklanmadığını belirtir.   
 |Kampanya        |   Sorunun bir kampanyadan (örneğin, promosyon teklifleri, ekstra GB) kaynaklanıp kaynaklanmadığını belirtir.
-| Diğer Ürün/Uygulama         |  Türkcel'in hangi uygulama veya ürününden (örneğin, BIP, Fizy, Platinum) kaynaklandığını belirler.   
-| Reklam         |  Türkcel'in reklamları, sponsorlukları veya boykotları ile ilgili şikayetleri kaydeder.      
+| Diğer Ürün/Uygulama         |  Turkcell'in hangi uygulama veya ürününden (örneğin, BIP, Fizy, Platinum) kaynaklandığını belirler.   
+| Reklam         |  Turkcell'in reklamları, sponsorlukları veya boykotları ile ilgili şikayetleri kaydeder.      
 | Çağrı Merkezi         |Çağrı merkezi ve teknik destek ile ilgili şikayetleri bu kolonda belirtilir.     
 | Bayi         |      Satış noktaları ve mağazalarla ilgili şikayetleri kaydeder.
 | Aksiyon       |  Aciliyet seviyesi 1 veya 2 olan durumlar için belirlenir, aksiyon alınıp alınmayacağını belirler. 0 aksiyon alınmayacağını, 1 ise müdahale edilmesi gerektiğini ifade eder.    
 
-Bu ek kolonlar sayesinde, daha ayrıntılı ve eyleme geçirilebilir bir duygu analizi sunmayı amaçlıyoruz. Yaklaşımımız, yarışmanın gereksinimlerini karşılamakla kalmayıp, aynı zamanda Türkcel'in müşteri şikayetlerine daha etkili bir şekilde yanıt vermesine ve genel müşteri memnuniyetini ve hizmet kalitesini artırmasına yardımcı olabilecek değerli içgörüler sunmaktadır. Bu geliştirilmiş veri seti yapısı, müşteri geri bildirimlerinin daha derinlemesine anlaşılmasını sağlar ve hedefe yönelik müdahaleler ile stratejik karar alma süreçlerini destekler.
+Bu ek kolonlar sayesinde, daha ayrıntılı ve eyleme geçirilebilir bir duygu analizi sunmayı amaçlıyoruz. Yaklaşımımız, yarışmanın gereksinimlerini karşılamakla kalmayıp, aynı zamanda Turkcell'in müşteri şikayetlerine daha etkili bir şekilde yanıt vermesine ve genel müşteri memnuniyetini ve hizmet kalitesini artırmasına yardımcı olabilecek değerli içgörüler sunmaktadır. Bu geliştirilmiş veri seti yapısı, müşteri geri bildirimlerinin daha derinlemesine anlaşılmasını sağlar ve hedefe yönelik müdahaleler ile stratejik karar alma süreçlerini destekler.
 # 🇹🇷 Results
 
 # 🇹🇷 Acknowledgments
