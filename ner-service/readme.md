@@ -1,8 +1,8 @@
 <B>Varlık İsmi Çıkarma</b>
 
-2024 Teknofest Doğal Dil İşleme (NLP) senaryo kategorisinde, Türkcell gibi mobil operatörler ve bunlarla ilişkili olan ürünler, paketler ve uygulamaları  (Superonline, Platinum Paket, BİP, Fizy, Lifebox, Müşteri Hizmetleri vb.) kapsayan, metinler içinden ilgili varlıkları çıkarmak amacıyla geliştirlmiş olan projedir.
+2024 Teknofest Doğal Dil İşleme (NLP) senaryo kategorisinde, Turkcell gibi mobil operatörler ve bunlarla ilişkili olan ürünler, paketler ve uygulamaları (Superonline, Platinum Paket, BİP, Fizy, Lifebox, Müşteri Hizmetleri vb.) kapsayan, metinler içinden ilgili varlıkları çıkarmak amacıyla geliştirlmiş olan projedir.
 
-Geliştirilen model için veriler X platformundan üzerinden @Turkcell varlığına ilişkin yapılan yorumlar toplanarak ve sikayetvar web sayfası üzerinden yapılan scrabing ile veri alınması süreçleri ile temin edilmiştir. Elde edilen 20700 adet veri, açık kaynak Doccano uygulaması ile etiketlenmiş; bu etiketleme işleminde daha detaylı analiz yapılmasını sağlayabilmek adına etiketler, <b><u>"OPERATOR, URUN, HIZMET, UYGULAMA ve PAKET"</u></b> gibi başlıklara ayrılmıştır.
+Geliştirilen model için veriler X platformu üzerinden @Turkcell varlığına ilişkin yapılan yorumlar toplanarak ve sikayetvar web sayfası üzerinden yapılan kazıma ile veri alınması süreçleri kullanılarak temin edilmiştir. Elde edilen 20700 adet veri, açık kaynak Doccano uygulaması ile etiketlenmiş; bu etiketleme işleminde daha detaylı analiz yapılmasını sağlayabilmek adına etiketler, <b><u>"OPERATOR, URUN, HIZMET, UYGULAMA ve PAKET"</u></b> gibi başlıklara ayrılmıştır.
 
 Örnek bir etiketleme yapısı şu şekildedir: <br>
 {<br>
@@ -12,11 +12,11 @@ Geliştirilen model için veriler X platformundan üzerinden @Turkcell varlığ�
   "Comments": []<br>
 }<br>
 
-Etiketlenen verilerin modeller <b>SpaCy ve Bert</b> gibi modellerde kullanımını kolaylaştırmak amacıyla "ner-service/utils/Json2Conll.ipynb" adresinde notebook dosyasında ki yapı geliştirilmiş ve veriler <b>jsonL</b> formatından <b>conLL</b> formatına dönüştürülmüştür.
+Etiketlenen verilerin <b>SpaCy ve Bert</b> gibi modellerde kullanımını kolaylaştırmak amacıyla "ner-service/utils/Json2Conll.ipynb" adresinde notebook dosyasındaki yapı geliştirilmiş ve veriler <b>jsonL</b> formatından <b>conLL</b> formatına dönüştürülmüştür.
 
-Bu süreçte özellikle şikayetvar verilerini işlerken karşımıza uzun metinler içeren veriler çıkmıştır. Bu durum ileride model geliştirme aşamasında <b>"input_token_size"</b> parametresi açısından problem teşkil edebilirdi. Ayrıca daha önceki tecrübelerimizden edindiğimiz bilgiler NER problemleri için uzun cümleler yerine anlamlı daha kısa cümleler kurulmasının daha başarılı sonuçlar ürettiğini göstermiştir. Bu sebeble sikayetvar verilerini cümlelere ayırmak için (veriler incelendiğinde imla kurallarına uygun cümleler olduğu gözlemlendi) "ner-service/utils/chuningLongText.ipynb" adresinde bulunan notebook dosyası içerisinde chunking yapısı geliştirildi.
+Bu süreçte özellikle şikayetvar verilerini işlerken karşımıza uzun metinler içeren veriler çıkmıştır. Bu durum ilerde model geliştirme aşamasında <b>"input_token_size"</b> parametresi açısından problem teşkil edebilirdi. Ayrıca daha önceki tecrübelerimizden edindiğimiz bilgiler NER problemleri için uzun cümleler yerine anlamlı daha kısa cümleler kurulmasının daha başarılı sonuçlar ürettiğini göstermiştir. Bu sebeple sikayetvar verilerini cümlelere ayırmak için (veriler incelendiğinde imla kurallarına uygun cümleler olduğu gözlemlendi) "ner-service/utils/chuningLongText.ipynb" adresinde bulunan notebook dosyası içerisinde parçalama (chunking) yapısı geliştirildi.
 
-Tüm bu süreçler sonucunda elde edilen veri dosyası "ner-service/data/dataset.conll" adresinde bulunmaktadır. Son durumda tag ve örnek sayıları aşağıdaki gibi oluşmuştur.
+Tüm bu süreçler sonucunda elde edilen veri dosyası "ner-service/data/dataset.conll" adresinde bulunmaktadır. Son durumda etiket ve örnek sayıları aşağıdaki gibi oluşmuştur.
 
 ![Screenshot from 2024-08-06 15-25-31](https://github.com/user-attachments/assets/65f6d1c0-74a3-46d2-ac25-a0693ab6afcd)
 
@@ -44,7 +44,7 @@ epsilon = 1e-8<br>
 
 ![Screenshot from 2024-08-06 15-39-10](https://github.com/user-attachments/assets/38a6d53f-c334-4c9e-9ff0-d3e95a408029)
 
-Yukarıda belirtilen öğrenme eğrisinden ve aşağıda belirtilen eğitim sonuçlarından da anlaşılacağı üzere modelin öğrenmesi 3-4 dönemden sonra durmakta ve model "OTHER" ifadelerinin orantısız şekilde fazla olmasından dolayı overfit olmaktadır. 
+Yukarıda belirtilen öğrenme eğrisinden ve aşağıda belirtilen eğitim sonuçlarından da anlaşılacağı üzere modelin öğrenmesi 3-4 devirden (epoch) sonra durmakta ve model "OTHER" ifadelerinin orantısız şekilde fazla olmasından dolayı aşırı öğrenme (overfit) durumu olmaktadır. 
 
 ## Model eğitim sonuçları şu şekildedir: ##
 
@@ -79,9 +79,9 @@ Yukarıda belirtilen öğrenme eğrisinden ve aşağıda belirtilen eğitim sonu
 ![Screenshot from 2024-08-06 16-35-06](https://github.com/user-attachments/assets/2a9780c4-5c8c-4e78-bbae-587709e86f7b)
 
 
-Yukarıda ki metriklerden ve açıklamalardan da görüldüğü üzere bulduğumuz veriler, etiketleme politikamız ve model seçimimiz, detaylı varlık çıkarımı için oldukça etkileyici sonuçlar vermiştir.
+Yukarıdaki metriklerden ve açıklamalardan da görüldüğü üzere bulunan veriler, kullanılan etiketleme politikası ve model seçimi, detaylı varlık çıkarımı için oldukça etkileyici sonuçlar vermiştir.
 
-"OTHER" ifadeler Accuracy anlamında modeli overfit duruma  götürsede F1 score bize gerçek değeri vermekte; ayrıca eğitim vericinin haricind edindiğimiz gerçek dünya verileri ile de model başarısını göstermektedir.
+"OTHER" ifadeler Doğruluk anlamında modeli aşırı öğrenme duruma götürse de F1 puanı bize gerçek değeri vermekte; ayrıca eğitim vericinin haricinde edindiğimiz gerçek dünya verileri ile de model başarısını göstermektedir.
 
 
 <b>Model indirmek için lütfen iletişime geçin.</b>
