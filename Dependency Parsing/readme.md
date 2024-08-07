@@ -11,3 +11,7 @@ Bu çalışma için ürettiğimiz, geliştirdiğimiz veri (ayrıntılı bilgi st
 Spacy dilbilimsel olarak hazır bileşenler içeren metin sınıflandırma, etikete bağlı dayalı bağımlılıkları analiz etme, cümleleri bölme, morfolojik analiz ve kök ayırma gibi bir çok problemin çözümünde kullanılan bir kütüphanedir. Türkçe için cümledeki kelimelerin bağımlıklarını bulmak için tr_core_web_trf adında daha önce eğitilmiş, tranformer tabanlı pipeline model kullanıldı. CNN-tabanlı diğer modellerden tr_core_web_lg, tr_core_web_md gibi modellere göre daha yüksek doğruluk sunduğu için tercih edildi. Model herkese açık bir şekilde erişilebilir ve linkten ulaşılabilir durumdadır.<br>https://github.com/turkish-nlp-suite/turkish-spacy-models
 
 Bağlılık Ayrıştırması(Dependency Parsing) ile hedefimiz bir cümle içerisindeki, sözcükler arasındaki ilişkileri ve ilişki türlerini belirleyerek ilgili cümlenin çözümlemesini sağladığından cümledeki kelime öbeklerini çıkarmada bize yol gösterici olacaktır. Örneğin "tt çekmiyor vodafone hizmeti rezalet ötesi kesinti oluyor. Turkcell fiyat farkını hak ediyor." cümlesini ele alacak olursak 
+
+<p align="center">
+  <img alt="Dependency Parsing Uygulanmış Örnek Bir Cümle" title="BRAIN-TR" src="https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/dependency_parsing_01.png" height="300">
+</p>
