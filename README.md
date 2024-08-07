@@ -88,7 +88,7 @@ Bu çalışma için ürettiğimiz, geliştirdiğimiz veri (ayrıntılı bilgi st
 
 Çalışma sonrası gerçek bir örneğe ilişkin sonuçlar şu şekildedir:<br>
 
-<b>text :</b> 
+<b>text :</b><br> 
 tt çekmiyor vodafone hizmeti rezalet ötesi kesinti oluyor. Turkcell fiyat farkını hak ediyor.<br>
 
 <b>sonuç :</b> 
