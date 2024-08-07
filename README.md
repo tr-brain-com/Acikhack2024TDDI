@@ -112,7 +112,7 @@ Her modelimiz ayrı ayrı rest servis olcak şekliyle hazırlanmıştır. Model 
 | **Macro Avg**| **0.814** | **0.821** | **0.818** | **2234** |
 | **Weighted Avg** | **0.855** | **0.854** | **0.854** | **2234** |
 
-Model training ve Rest Api kodları için ayrıntılı açıklaması için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/Sentiment%20Analysis/readme.md).
+Model training ve Rest Api kodlarının ayrıntılı açıklaması için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/Sentiment%20Analysis/readme.md).
 
 # 🇹🇷 Severity Classification
 <p align="center">
