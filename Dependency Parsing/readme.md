@@ -18,8 +18,7 @@ Bağlılık Ayrıştırması(Dependency Parsing) ile hedefimiz bir cümle içeri
 
 Dependency Parsing uygulanmış ve görsel olarak cümledeki tokenlerin nasıl bir ilişki içinde oldukları aşağıdaki resimde görülmektedir.
 
-![dependency_plot](https://github.com/user-attachments/assets/72a0bac5-818f-4afc-a2a8-e7d289ec2740)
-
+![dependency_plot](https://github.com/user-attachments/assets/c9b8cdad-f5c3-4f25-abb8-e3f76b570d9b)
 
 Yukarıdaki tablo için örnek python script ise aşağıdaki gibidir.
 
