@@ -34,4 +34,32 @@ def outDependencyForm(doc, start_idx):
     return df_dependency
 ```
 
-Yukarıdaki tabloda iki önemli konu bulunmakta, bunlardan ilki *dep_* kolonu ile verilen her bir kelime veya token'in bağımlılığı bir diğeri ise *pos_* ile belirltilen part-of-speech tagger(metin parçası etiketleme) ile verilen kolondur.
+Yukarıdaki tabloda iki önemli konu bulunmakta, bunlardan ilki *dep_* kolonu ile verilen her bir kelime veya token'in bağımlılığı bir diğeri ise *pos_* ile belirltilen part-of-speech tagger(metin parçası etiketleme) ile verilen kolondur. Problem çözüm akışımıza göre ilk aşama olarak verilen cümledeki varlıkların çıkartılması için Varlık Etiketi Sınıflandırma modelimiz kullanılmaktadır. Ardından bu modelden çıktı olarak gelen varlıklarla birlikte giriş metninin önce cümlelere sonra da cümleciklere ayırmak için kelimelerin bağlılık ayrıştırmasına göre analiz yapılıp entity(varlık) bazlı cümle ayırma işlemi için aşağıdaki algoritma kullanılmıştır. Algoritma mevcut dil yapısına göre sözcükler ve sözcük grupları analiz edilmiş olup Türkçe diline özgü cümle ayırma işlemi yapmaktadır.
+
+```python
+def splitSentencesByDependecies(data):
+    sentences = dict()
+    sentence = ""
+    entities = []
+    for index, row in data.iterrows():
+        if row["pos_"] != 'PUNCT':
+            sentence += row["token"] + " "
+        if row["entitiy"] != 'OTHER':
+            if len(row["token"]) > 1:
+                entities.append([row["token"], row["entityindex"]])
+        print(row['token'], row['pos_'], row['dep_'])
+        if (((row["pos_"] == 'VERB') and row["dep_"] not in ('nsubj', 'xcomp', 'acl')) or
+                (row["pos_"] == 'NOUN' and row["dep_"] in ('advcl', 'ROOT')) or
+                (row["pos_"] == 'CCONJ') and ('cc' in row["dep_"])):
+            if len(entities) > 0:
+                sentences[sentence] = entities
+                entities = []
+                sentence = ""
+    if sentence != "" and len(entities) > 0:
+        if 'VERB' not in entities:
+            sentences[sentence] = entities
+    return sentences
+```
+
+Örnek olarak aldığımız "tt çekmiyor vodafone hizmeti rezalet ötesi kesinti oluyor. Turkcell fiyat farkını hak ediyor." cümlesinin ayırma için geliştirilen algoritma çıktı olarak 
+*[['tt çekmiyor', ['tt]],  ['vodafone hizmeti rezalet ötesi kesinti oluyor', ['vodafone']] , ['Turkcell fiyat farkını hak ediyor', ['Turkcell']]* şeklinde dizi yapısında bize bu üç farklı veri vermektedir. Üç farklı veride cümleler ve o cümledeki farklı varlıklar bulunmaktadır. Bu çıktıyı sağlayarak amaç bu aşamadan sonraki sentiment analiz için cümle ve cümle değerlendirmeleri yapıldıktan sonra değerlendirmenin sahip olacağı varlığı belirlemiş olmaktır.
