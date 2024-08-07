@@ -1,6 +1,6 @@
 ## Türkçe BERT ile Duygu Analizi
 
-BERT tabanlı bir model kullanarak Türkçe metinlerde duygu analizi yapmaktadır. Proje kapsamında k-fold çapraz doğrulama yöntemi uygulanmıştır."bert-base-turkish-cased" modeli, Türkçe dilinde büyük ve küçük harf ayrımını dikkate alır. Bu, dil bilgisi ve kelime anlamları açısından önemli olabilir. Cased model kullanmak, özellikle özel isimlerin doğru şekilde anlaşılması ve sınıflandırılması açısından avantaj sağlar.
+BERT tabanlı bir model kullanarak Türkçe metinlerde duygu analizi yapmaktadır. Proje kapsamında k-fold çapraz doğrulama yöntemi uygulanmıştır."bert-base-turkish-cased" modeli, Türkçe dilinde büyük ve küçük harf ayrımını dikkate alır. Bu, dil bilgisi ve kelime anlamları açısından önem arz etmektedir. Cased model kullanmak, özellikle özel isimlerin doğru şekilde anlaşılması ve sınıflandırılması açısından avantaj sağlar.
 
 ```
 pip install transformers
@@ -36,11 +36,11 @@ if 'kfold' not in train_folds_df.columns:
         train_folds_df.loc[val_index, 'kfold'] = fold
 ```
 
-Her bir fold için model eğitimi ve değerlendirilmesi yapılır. Eğitim verisi olarak belirli bir fold'un dışındaki veriler, validasyon verisi olarak ise fold verileri kullanılır:
+Her bir katlama için model eğitimi ve değerlendirilmesi yapılır. Eğitim verisi olarak belirli bir katlamanın dışındaki veriler, doğrulama verisi olarak ise katlama verileri kullanılır:
 
 ```
 for fold in range(kfold):
-    # Eğitim ve validasyon setlerinin oluşturulması
+    # Eğitim ve doğrulama kümelerinin oluşturulması
     train_df = train_folds_df[train_folds_df['kfold'] != fold]
     validation_df = train_folds_df[train_folds_df['kfold'] == fold]
 
@@ -70,7 +70,7 @@ for fold in range(kfold):
                                       'save_steps': 0 })
 ```
 
-Modelin performansı, her bir fold için değerlendirilir ve genel sonuçlar aşağıdaki gibidir;
+Modelin performansı, her bir katlama için değerlendirilir ve genel sonuçlar aşağıdaki gibidir;
 
 | Sınıf        | Precision | Recall | F1-Score | Support |
 |--------------|-----------|--------|----------|---------|
