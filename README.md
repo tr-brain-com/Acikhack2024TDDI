@@ -77,11 +77,11 @@ Varlık İsmi Çıkarımı (NER) aşamasını adım adım incelemek için [tıkl
 
 # 🇹🇷 Bağımlılık Analizi (Dependency Parsing)
 
-Bu bölüm, problem tanımı uyarınca cümle içerisinde geçen farklı varlıklara yönelik duyguları tespit etmek amacıyla geliştirilmiştir. Yapılan araştırmalar ve gerçekleştirilen çalışmalar incelendiğinde problem çözümüne yönelik olarak <b>Yönelim Temelli (Aspect Based)</b> ve <b>Varlık Temelli (Entity Based)</b> olarak iki farklı yöntem geliştirildiği; bu yöntemlerin seçimi konusunda da alana özgü verilerin yapısının etkili olduğu fark edilmiştir.<br>
+Bu bölüm, problem tanımı uyarınca cümle içerisinde geçen farklı varlıklara yönelik duyguları tespit etmek amacıyla geliştirilmiştir. Yapılan araştırmalar ve gerçekleştirilen çalışmalar incelendiğinde problem çözümüne yönelik olarak <b>Yönelim Tabanlı (Aspect Based)</b> ve <b>Varlık Tabanlı (Entity Based)</b> olarak iki farklı yöntem geliştirildiği; bu yöntemlerin seçimi konusunda da alana özgü verilerin yapısının etkili olduğu fark edilmiştir.<br>
 
-<b>Yönelim Temelli (Aspect Based)</b>, bir cümlede veya belgede belirtilen belirli yönlerle ilişkili duyguyu belirleme görevini ifade eder. <br>
+<b>Yönelim Tabanlı (Aspect Based)</b>, bir cümlede veya belgede belirtilen belirli yönlerle ilişkili duyguyu belirleme görevini ifade eder. <br>
 
-<b>Varlık Temelli (Entity Based)</b> olarak ifade edilen yapı ise cümle içinde belirlenen varlıklara yönelen duyguların tespitini sağlamayı ifade eder.<br>
+<b>Varlık Tabanlı (Entity Based)</b> olarak ifade edilen yapı ise cümle içinde belirlenen varlıklara yönelen duyguların tespitini sağlamayı ifade eder.<br>
 
 Bu çalışma için ürettiğimiz, geliştirdiğimiz veri (ayrıntılı bilgi stats içerisinde mevcuttur), hem entity hemde aspect tabanlı hibrit bir yapının ortaya konulmasını bizim için gerekli kılmıştır. Bu noktada <b>Bağımlılık Analizi (Dependency Parsing)</b> olarak bilinen bir dile ait cümle yapılarının detaylı şekilde incelenmesi ve yorumlanması gerekmiştir. Bağımlılık Analizi ile cümle bölümlendirmesi ve varlık tabanlı ayrıştırma birlikte öğrenilir. Mevcut problemde varlık bazlı veya varlığa yönelik duyguları tespit etmek amacıyla SpaCy kullanarak kural tabanlı bir yapı inşa edilmiştir. Bu kural tabanlı yapı, metinlerin standart cümle yapısına uymayacağı (X verileri vb.) fikrinden hareketle ortaya çıkarılmış, metin içerisinde ki varlıklara yönelen duyguların tespitinde oldukça başarılı sonuçlar elde edilmiştir.<br>
 
