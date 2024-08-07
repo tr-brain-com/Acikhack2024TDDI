@@ -95,6 +95,8 @@ tt çekmiyor vodafone hizmeti rezalet ötesi kesinti oluyor. Turkcell fiyat fark
 
 ![image](https://github.com/user-attachments/assets/a1c861d4-8ed4-4260-b21e-0f1a274eba9c)
 
+Ayrıntılı bilgi için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/Dependency%20Parsing/readme.md).
+
 
 # 🇹🇷 Sentiment Analysis
 
