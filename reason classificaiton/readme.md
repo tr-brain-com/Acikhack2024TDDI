@@ -21,7 +21,7 @@ Proje kapsamında kullanılan model, BERT tabanlı "dbmdz/bert-base-turkish-unca
 
 Doğruluk puanları, modelin her bir kategori için ne kadar doğru tahmin yaptığını göstermektedir. Örneğin, "ürün" kategorisinde modelin doğruluk puanı 0.970 (yani %97) olup, oldukça yüksek bir başarıya işaret etmektedir. Öte yandan, "kampanya" kategorisinde doğruluk puanı 0.471, "kurumsal" kategorisinde ise 0.667 olup nispeten düşük olduğu görülmektedir. Bu düşüklükler, veri setinde bu kategorilere ait veri sayısının az olmasından kaynaklanmaktadır. Veri setinin genişletilmesiyle bu kategorilerde de doğruluğun artması beklenmektedir.
 
-| Kategori                 | Doğruluk Skoru |
+| Kategori                 | Doğruluk Puanı |
 |--------------------------|----------------|
 | Bayi                     | 0.714           |
 | Diğer                    | 0.911           |
