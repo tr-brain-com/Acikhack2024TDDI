@@ -86,6 +86,15 @@ Bu bölüm, problem tanımı uyarınca cümle içerisinde geçen farklı varlık
 
 Bu çalışma için ürettiğimiz, geliştirdiğimiz veri (ayrıntılı bilgi stats içerisinde mevcuttur), hem entity hemde aspect tabanlı hibrid bir yapının ortaya konulmasını bizim için gerekli kılmıştır. Bu noktada <b>Dependency Parsing</b> olarak bilinen bir dile ait cümle yapılarının detaylı şekilde incelenmesi ve yorumlanması gerekmiştir. Dependency parsing ile  cümle bölümlendirmesi ve entity tabanlı ayrıştırma birlikte öğrenilir. Mevcut problemde entity bazlı duyguları veya entity yönelik duyguları tespit etmek amacıyla SpaCy kullanarak kural tabanlı  bir yapı inşa edilmiştir. Bu kural tabanlı yapı, metinlerin standart cümle yapısına uymayacağı (twitter verileri gb. ) fikrinden hareketle ortaya çıkarılmış, metin içerisinde ki varlıklara yönelen duyguların tespitinde oldukça başarılı sonuçlar elde edilmiştir.<br>
 
+Çalışma sonrası gerçek bir örneğe ilişkin sonuçlar şu şekildedir:<br>
+
+<b>text :</b> 
+tt çekmiyor vodafone hizmeti rezalet ötesi kesinti oluyor. Turkcell fiyat farkını hak ediyor.<br>
+
+<b>sonuç :</b> 
+
+![image](https://github.com/user-attachments/assets/a1c861d4-8ed4-4260-b21e-0f1a274eba9c)
+
 
 # 🇹🇷 Sentiment Analysis
 
