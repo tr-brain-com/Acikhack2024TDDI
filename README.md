@@ -140,7 +140,7 @@ Teknofest 2024'teki Doğal Dil İşleme (NLP) senaryo kategorisi yarışmasında
 | ----------     | ---------------------------------------------
 | Entity Listesi          | Metinde geçen varlıkların listesini içerir. Yaklaşık 100 farklı varlık tespit edilmiş, böylece analizin geniş bir kapsama sahip olmasını sağlanmıştır.
 | Target      | Tespit edilen varlıkla ilişkili duygu burada olumlu, olumsuz veya nötr olarak sınıflandırılır. Bu, yarışmanın gereksinimlerine uygun olarak belirlenmiştir.       
-| Severity         | Metinde tartışılan konunun aciliyet veya önem derecesini belirtir. 0 önemsiz, 1 orta derecede önemli ve 2 acil bir durumu ifade eder           
+| Severity         | Metinde tartışılan konunun aciliyet veya önem derecesini belirtir. 0 'aciliyeti bulunmayan', 1 'orta derecede acil' ve 2 'acil' aksiyonu ifade eder.           
 | Reason         | Olumsuz duygular için belirlenmiştir, sorunun kaynağını belirler. Örneğin, fatura, ağ (network) sorunları, mobil numara taşıma (mnp) gibi. Bu, müşteri memnuniyetsizliğinin temel nedenini anlamamıza yardımcı olur    
 | Muhatap         | Girdinin ana muhatabının Turkcell olup olmadığını belirtir.     
 | Mobil         | Sorunun mobil hat ile ilgili olup olmadığını belirtir      
