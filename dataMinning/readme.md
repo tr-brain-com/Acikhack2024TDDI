@@ -2,8 +2,8 @@
 
 Veri madenciliği, büyük veri kümelerinden anlamlı ifadeler, ilişkiler ve bilgiler çıkarmak için kullanılan bir süreçtir. Veri madenciliği, veri hazırlama, model oluşturma, değerlendirme ve sonuçları yorumlama gibi adımları içerir.
 BeautifulSoup ve Scrapy: Web kazıma (web scraping) için kullanılır. İnternetten veri çekmek ve analiz etmek için kullanışlıdır. BeautifulSoup, Python'da HTML ve XML dosyalarını ayrıştırmak ve analiz etmek için ,
-kullanılan bir kütüphanedir. Web sayfalarından veri çekmek, web kazıma (web scraping) işlemlerinde sıklıkla tercih edilir.HTML ve XML dosyalarını kolayca ayrıştırır.Belgelerdeki elementlere, etiketlere ve niteliklere hızlı ve kolay erişim sağlar.
-Belgeleri ağaç yapısı (parse tree) olarak temsil eder ve bu sayede belirli elementleri seçip işlemek kolaylaşır.Kurulum aşağıdaki gibidir.
+kullanılan bir kütüphanedir. Web sayfalarından veri çekmek, web kazıma (web scraping) işlemlerinde sıklıkla tercih edilir. HTML ve XML dosyalarını kolayca ayrıştırır. Belgelerdeki elemanlara, etiketlere ve niteliklere hızlı ve kolay erişim sağlar.
+Belgeleri ağaç yapısı (parse tree) olarak temsil eder ve bu sayede belirli elementleri seçip işlemek kolaylaşır. Kurulum aşağıdaki gibidir.
 <pre><code>
 <!DOCTYPE html>
 <html>
@@ -24,7 +24,7 @@ import csv</p>
 </body>
 </html>
 </code></pre>
-İnternet sitesinden verilerin çekileceği URL'yi belirtiyoruz. Bu URL, Turkcell Platinum şikayetlerinin 10. sayfasını temsil eder.
+İnternet sitesinden verilerin çekileceği adresi (URL) belirtiyoruz. Bu URL, Turkcell Platinum şikayetlerinin 10. sayfasını temsil eder.
 <pre><code>
 <!DOCTYPE html>
 <html>
@@ -56,7 +56,7 @@ Belirtilen URL'ye HTTP GET isteği gönderiyoruz ve yanıtı (response) alıyoru
 </body>
 </html>
 </code></pre>
-HTML içeriğinde, şikayet detaylarını içeren tüm article elementlerini class attributeleri "card-v2 ga-v ga-c" olanları buluyoruz.Belirtilen dosya yolunda yeni bir CSV dosyası oluşturuyoruz. Dosya yazma modunda (mode='w') açılıyor ve UTF-8 karakter kodlaması kullanılıyor. CSV dosyasına yazmak için bir csv.writer oluşturuyoruz ve dosyaya "Link" ve "Content" başlıklarını içeren ilk satırı yazıyoruz.
+HTML içeriğinde, şikayet detaylarını içeren tüm article elementlerini class attributeleri "card-v2 ga-v ga-c" olanları buluyoruz. Belirtilen dosya yolunda yeni bir CSV dosyası oluşturuyoruz. Dosya yazma modunda (mode='w') açılıyor ve UTF-8 karakter kodlaması kullanılıyor. CSV dosyasına yazmak için bir csv.writer oluşturuyoruz ve dosyaya "Link" ve "Content" başlıklarını içeren ilk satırı yazıyoruz.
 <pre><code>
 <!DOCTYPE html>
 <html>
@@ -86,7 +86,7 @@ Bulunan her article elemanında şikayet başlığını içeren h2 elemanını b
 </body>
 </html>
 </code></pre>
-Detay sayfasına bir HTTP GET isteği gönderiyoruz ve gelen içeriği BeautifulSoup ile ayrıştırıyoruz.Detay sayfasında, şikayet detaylarını içeren div elemanlarını class attributeleri "complaint-detail-description" olanları buluyoruz.
+Detay sayfasına bir HTTP GET isteği gönderiyoruz ve gelen içeriği BeautifulSoup ile ayrıştırıyoruz. Detay sayfasında, şikayet detaylarını içeren div elemanlarından sınıf (class) nitelikleri (attribute) "complaint-detail-description" olanları buluyoruz.
 <pre><code>
 <!DOCTYPE html>
 <html>
