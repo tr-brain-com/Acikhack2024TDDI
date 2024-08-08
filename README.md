@@ -155,7 +155,14 @@ Teknofest 2024'teki Doğal Dil İşleme (NLP) senaryo kategorisi yarışmasında
 | Bayi         |      Satış noktaları ve mağazalarla ilgili şikayetleri kaydeder.
 
 Bu ek kolonlar sayesinde, daha ayrıntılı ve eyleme geçirilebilir bir duygu analizi sunmayı amaçlıyoruz. Yaklaşımımız, yarışmanın gereksinimlerini karşılamakla kalmayıp, aynı zamanda Turkcell'in müşteri şikayetlerine daha etkili bir şekilde yanıt vermesine ve genel müşteri memnuniyetini ve hizmet kalitesini artırmasına yardımcı olabilecek değerli içgörüler sunmaktadır. Bu geliştirilmiş veri seti yapısı, müşteri geri bildirimlerinin daha derinlemesine anlaşılmasını sağlar ve hedefe yönelik müdahaleler ile stratejik karar alma süreçlerini destekler.
+
 # 🇹🇷 Results
+Bu çalışmada, girdi içerisinde farklı varlıklara ilişkin duyguların tespit edilmesi konusunda oldukça geniş bir literatür taraması yapılmış, farklı yöntemler denenmiş ve dilimizin morfolojik yapısının temellerine kadar inilmiştir. Bu çalışma bize göstermiştir ele alınan konu oldukça zorlu bir problem olmakla birlikte Türkçe'nin yapısıda problemin çözümü konusunda işleri oldukça zor bir hale getirmektedir. 
+
+Çalışmalarımız, literatürde de sıklıkla kullanılan Aspect Based ve Entity Based yöntemlerinin problemi gerçek manada çözmede yeterli olmayacağını göstermiştir. Bu iki yöntemi birleştirerek oluşturulacak hibrid bir yaklaşımın doğruluk için çok daha etkili olacağını göstermiştir.
+
+Bu çıkarımda bulunduğumuz yeni bir yaklaşım, yeni bir etiketleme yöntemi ile etiketlenmiş daha fazla veriye ihtiyaç duymakla birlikte yeni ve özel bir model mimarisi ortaya koymayı da zorunlu kılmaktadır. Bundan sonra ki süreçte buradan edindiğimiz tecrübeler ışığında yüksek doğruluklu bir çözüm konusunda çalışmalar yapılacaktır.
+
 
 # 🇹🇷 Acknowledgments
 Bize sağladığı destek ve yenilikçi yönlendirmeleriyle Takım Danışmanımız [Dr. Duygu Çakır](https://tr.linkedin.com/in/duygu-cakir-45483164) teşekkür ederiz.
