@@ -1,7 +1,7 @@
 #  🇹🇷 Acikhack2024TDDI
 Teknofest 2024 Türkçe Doğal Dil işleme Senaryo Kategorisi
 
-Bu kısma real time uygulama gif eklenebilir
+![Braintr-720](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/brain_tr_app.gif)
 
 #  🇹🇷 Data Minning
 <p align="center">
