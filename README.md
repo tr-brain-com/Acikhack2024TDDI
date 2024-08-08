@@ -1,7 +1,11 @@
 #  🇹🇷 Acikhack2024TDDI
 Teknofest 2024 Türkçe Doğal Dil işleme Senaryo Kategorisi
 
+# 🇹🇷 Application
+
 ![Braintr-720](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/images/brain_tr_app.gif)
+
+Streamlit ile hazırlanmış olan uygulamamız için ayrıntılı bilgi için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/applcations/readme.md).
 
 #  🇹🇷 Data Minning
 <p align="center">
@@ -129,8 +133,6 @@ Model eğitimi ve Rest Api kodlarının ayrıntılı açıklaması için [tıkla
 
 Teknofest 2024'teki Doğal Dil İşleme (NLP) senaryo kategorisi yarışmasında katıldığımız proje, varlık bazlı duygu analizi üzerine odaklanmaktadır. Projemizde, Turkcell ve ürünleri hakkında yazılan metinlerde olumsuzluğa sebep olan kategorilerin tespitini amaçlayarak özgünlük sağlamak için veri setine "sebep (reason)" kolonu eklenmiştir. Bu kolon, kullanıcıların olumsuz duygu bildirdiği durumlarda hangi kategoriye (örneğin bayi, fatura, kampanya) dair olumsuzluk yaşadıklarını belirlememize olanak tanımaktadır. Ayrıntılı bilgi ve kod için [tıklayınız](https://github.com/tr-brain-com/Acikhack2024TDDI/blob/main/reason%20classificaiton/readme.md).
 
-
-# 🇹🇷 Application
 
 #  🇹🇷 Contribution
 2024 Teknofest Türkçe Doğal Dil İşleme senaryo kategorisi yarışmasında, projemiz varlık tabanlı duygu analizine odaklanmaktadır. Bu kapsamda, X ve Şikayet Var sayfalarından veri madenciliği yaparak kendi verilerimizi oluşturduk. Yarışmanın ana hedefi, metin içerisindeki varlıkları tespit etmek ve bu varlıklara ait duygu analizini yaparak sonuçları olumlu, olumsuz ve nötr olarak sınıflandırmaktır. Analizimizin kapsamını ve derinliğini artırmak için veri setimize ek kolonlar ekledik ve her biri aşağıda açıklanmaktadır
