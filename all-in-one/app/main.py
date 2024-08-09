@@ -1,9 +1,7 @@
 import transformers
 from fastapi import FastAPI
 from pydantic import BaseModel, Field
-from spacy.tokenizer import Tokenizer
 from spacy.tokens import Doc
-import spacy
 import uvicorn
 import spacy
 import os
@@ -44,8 +42,8 @@ class Item(BaseModel):
 
 
 def getSentimentPipeline():
-    tokenizer = AutoTokenizer.from_pretrained("app/models/sentiment", local_files_only=True)
-    model = AutoModelForSequenceClassification.from_pretrained("app/models/sentiment", local_files_only=True)
+    tokenizer = AutoTokenizer.from_pretrained("app/models/sentimentv2", local_files_only=True)
+    model = AutoModelForSequenceClassification.from_pretrained("app/models/sentimentv2", local_files_only=True)
     sentiment_pipeline = pipeline("sentiment-analysis", tokenizer=tokenizer, model=model)
     return sentiment_pipeline
 
@@ -120,34 +118,69 @@ def getNerResponse(sentence):
     # print(outputs)
     return outputs
 
+def special_character_clean(text):
+    return re.sub(r'["\-;%()|&+=^*%.”“’,!?¦‘:#$@\[\]/<>]', '', text)
+
 
 def cleanSpaces(rawText):
     #return str(rawText).replace("\'", "").replace('"', "").replace("\t", "").replace("\n", "")
     rawText = re.sub(('\s+'), ' ', rawText).replace("'", " ").replace('"', " ")
+
+    cleaned = []
+    for word in rawText.split():
+        if word not in ('in', 'ın', 'un', 'ün', 'nin', 'nın',
+                        'nun', 'nün', 'inin', 'ının', 'unun', 'ünün','den','dan',
+                        'de','da','ile','le') and len(word)>1:
+            cleaned.append(word)
+    rawText = ' '.join(cleaned)
+    rawText = special_character_clean(rawText)
+
     return rawText
 
 
 def splitSentencesByDependecies(data):
+
     sentences = dict()
     sentence = ""
     entities = []
-    for index, row in data.iterrows():
-        if row["pos_"] != 'PUNCT':
-            sentence += row["token"] + " "
-        if row["entitiy"] != 'OTHER':
-            if len(row["token"]) > 1:
-                entities.append([row["token"], row["entityindex"]])
-        print(row['token'], row['pos_'], row['dep_'])
-        if (((row["pos_"] == 'VERB') and row["dep_"] not in ('nsubj', 'xcomp', 'acl')) or
-                (row["pos_"] == 'NOUN' and row["dep_"] in ('advcl', 'ROOT')) or
-                (row["pos_"] == 'CCONJ') and ('cc' in row["dep_"])):
-            if len(entities) > 0:
+    sentence_hold = ""
+
+    if len(data[data['entityindex'] > 0]['entityindex'].unique().tolist()) > 1:
+        for index, row in data.iterrows():
+            if row["pos_"] != 'PUNCT':
+                sentence += row["token"] + " "
+            if row["entitiy"] != 'OTHER':
+                if len(row["token"]) > 1:
+                    entities.append([row["token"], row["entityindex"]])
+            print(row['token'], row['pos_'], row['dep_'])
+            if (((row["pos_"] == 'VERB') and row["dep_"] not in ('nsubj', 'xcomp', 'acl', 'dep')) or
+                    #(row["pos_"] == 'NOUN' and row["dep_"] in ('advcl', 'ROOT')) or
+                    (row["pos_"] == 'NOUN' and row["dep_"] in ('advcl')) or
+                    (row["pos_"] == 'AUX' and row["dep_"] in ('aux')) or
+                    (row["pos_"] == 'CCONJ') and ('cc' in row["dep_"])):
+                if len(entities) > 0:
+                    sentences[sentence] = entities
+                    entities = []
+                    sentence_hold = sentence
+                    sentence = ""
+        if sentence != "" and len(entities) > 0:
+            if 'VERB' not in entities:
                 sentences[sentence] = entities
-                entities = []
-                sentence = ""
-    if sentence != "" and len(entities) > 0:
-        if 'VERB' not in entities:
-            sentences[sentence] = entities
+        if len(entities) > 0:
+            if sentence == "" and sentence_hold != "":
+                sentences[sentence_hold] = entities
+
+    else:
+        print(f'TEK ENTITY GELDİ!!!!!')
+        sentence = ""
+        entities = []
+        for index, row in data.iterrows():
+            if row["entitiy"] != 'OTHER':
+                if len(row["token"]) > 1:
+                    entities.append([row["token"], row["entityindex"]])
+            sentence += row["token"] + " "
+        sentences[sentence] = entities
+
     return sentences
 
 
@@ -224,6 +257,23 @@ def makeResult(out_sentences):
     return json.dumps(outputs, indent=4, ensure_ascii=False)
 
 
+def getExcludeTokens(doc):
+    print(f'..........Spacy Entites...............')
+    exclude_entities = ['LOC', 'GPE', 'PERSON']
+    exclude_tokens = []
+    for token in doc.ents:
+        print(token.label_, token.ents, token.start_char, token.end_char)
+        if token.label_ in exclude_entities:
+            if ' ' in str(token.ents[0]):
+                for ent0 in str(token.ents[0]).split():
+                    exclude_tokens.append(str(ent0))
+            else:
+                exclude_tokens.append(str(token.ents[0]))
+    print(exclude_tokens)
+
+    return exclude_tokens
+
+
 @app.on_event("startup")
 def startup_event():
     try:
@@ -246,6 +296,10 @@ async def predict(item: Item):
     # Buraya model'in çıktısı gelecek
     # Çıktı formatı aşağıdaki örnek gibi olacak
 
+    #Append each request
+    with open('outputs/requests.txt', 'a+') as f:
+        f.write(item.text + '\n')
+
     # Call the entity service
     inputtext = cleanSpaces(item.text)
     nerResponse = getNerResponse(inputtext)
@@ -253,7 +307,6 @@ async def predict(item: Item):
     # nerResponse = [{"entitiy": "PRODUCT", "word": "Türk", "entityindex": 1, "wordindex": 0}, {"entitiy": "OPERATOR", "word": "Telekom", "entityindex": 1, "wordindex": 1}, {"entitiy": "OTHER", "word": "tanıdığım", "entityindex": -1, "wordindex": 2}, {"entitiy": "OTHER", "word": "en", "entityindex": -1, "wordindex": 3}, {"entitiy": "OTHER", "word": "iyi", "entityindex": -1, "wordindex": 4}, {"entitiy": "OTHER", "word": "operatörlerden", "entityindex": -1, "wordindex": 5}, {"entitiy": "OTHER", "word": "bir", "entityindex": -1, "wordindex": 6}, {"entitiy": "OTHER", "word": "tanesidir", "entityindex": -1, "wordindex": 7}, {"entitiy": "OTHER", "word": ".", "entityindex": -1, "wordindex": 8}, {"entitiy": "OPERATOR", "word": "Türkcell", "entityindex": 2, "wordindex": 9}, {"entitiy": "OTHER", "word": "ise", "entityindex": -1, "wordindex": 10}, {"entitiy": "OTHER", "word": "yetersiz", "entityindex": -1, "wordindex": 11}, {"entitiy": "OTHER", "word": "seviyede", "entityindex": -1, "wordindex": 12}, {"entitiy": "OTHER", "word": "değil", "entityindex": -1, "wordindex": 13}, {"entitiy": "OTHER", "word": ".", "entityindex": -1, "wordindex": 14}]
     # print(f'................{nerResponse}')
     df_ner_response = pd.DataFrame.from_dict(nerResponse)
-
 
     # Get Dependency
     text = ' '.join(df_ner_response.word.tolist())
@@ -269,14 +322,57 @@ async def predict(item: Item):
         df_ner_sub = df_ner_response[df_ner_response.wordindex.between(start_idx, end_idx)]
         print(df_ner_sub.head())
 
+        print(f'..................... {type(spacyNlp)}')
+
         # Run spacy nlp Dependecy Parser
         spacyNlp.tokenizer = WhitespaceTokenizer(spacyNlp.vocab)
         doc = spacyNlp(sub_text)
+
+        exclude_tokens = getExcludeTokens(doc)
+
         df_dependency = outDependencyForm(doc, start_idx)
 
         # Merge Ner results and dependency parser results
         df_sentences = pd.merge(df_ner_sub, df_dependency, on='wordindex', how='left')
-        df_sentences.head(20)
+        print(df_sentences.head(20))
+
+        ##### exclude LOC,GPE,PERSON
+        print(f'======================')
+        df_sentences['entitiy'] = (df_sentences[['entitiy', 'word']].
+                                  apply(lambda row: 'OTHER' if (row['word'] in exclude_tokens) else row['entitiy'], axis=1))
+        print(df_sentences.head(20))
+        print(f'======================')
+        ######
+
+
+        ###### exclude HIZMET entity
+        #df_sentences['entitiy'] = df_sentences[df_sentences['entitiy'] = df_sentences['entitiy'].apply(lambda x: 'OTHER' if x == 'HIZMET' else x) 'entitiy'].apply(lambda x: 'OTHER' if x == 'HIZMET' else x)
+        all_indexes = df_sentences[df_sentences['entitiy'] == 'HIZMET']['entityindex'].unique().tolist()
+        print(f'=======================')
+        print(all_indexes)
+        exclude_indexes = []
+        for idx in all_indexes:
+            for sub_index, sub_row in df_sentences[df_sentences['entityindex'] == idx].iterrows():
+                print(sub_row['entitiy'])
+                if sub_row['entitiy'] != 'HIZMET':
+                    exclude_indexes.append(sub_row['entityindex'])
+        exclude_indexes = list(np.reshape(list(exclude_indexes), -1))
+
+        df_sentences['entitiy'] = (df_sentences[['entitiy', 'entityindex']].
+                                  apply(lambda row: 'OTHER' if (row['entityindex'] in exclude_indexes and row['entitiy'] == 'HIZMET')
+                                                            else row['entitiy'], axis=1))
+
+
+        print(exclude_indexes)
+        print(f'=======================')
+        ######
+
+        ######
+        #df_sentences['entitiy'] = (df_sentences[['entitiy', 'word']].
+        #                            apply(lambda row: 'OTHER' if (row['entitiy'] != 'OTHER' and len(row['word']) <= 2 and row['word'] not in ('tt', 'tr', 'tv'))
+        #                                                      else row['entitiy'], axis=1))
+        ######
+
 
         # Split sentences by dependencies
         sentences = splitSentencesByDependecies(df_sentences)
@@ -291,9 +387,12 @@ async def predict(item: Item):
     result = makeResult(out_sentences=out_sentences)
     # result = { "entity_list": [ "Türk Telekom", "Türkcell"], "results": [{ "entity": "Türk Telekom", "sentiment": "olumlu" },{ "entity": "Türkcell", "sentiment": "olumlu" } ]}
 
+    #Append each response
+    with open('outputs/requests.txt', 'a+') as f:
+        f.write(json.dumps(result,  indent=0) + '\n')
+
     return json.loads(result)
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=8000)
-
+    uvicorn.run(app, host="0.0.0.0", port=5500)
